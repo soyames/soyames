@@ -1,16 +1,52 @@
 ## Hi there 👋
 
-<!--
-**soyames/soyames** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p>
+  <a href="https://x.com/_amevY2">
+    <img src="https://img.shields.io/badge/Twitter-@_amevY2-1DA1F2?style=flat&logo=twitter&logoColor=white" alt="Twitter Badge"/>
+  </a>
+  <a href="https://www.linkedin.com/in/ameviy/">
+    <img src="https://img.shields.io/badge/LinkedIn-ameviy-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  </p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<table>
+  <tr>
+    <td>
+      <a href="https://github.com/anuraghazra/github-readme-stats">
+        <img src="https://github-readme-stats.vercel.app/api?username=soyames&show_icons=true&theme=vue-dark&hide_border=true&rank_icon=percentile" alt="soyames's GitHub Stats" />
+      </a>
+    </td>
+    <td>
+      <a href="https://git.io/streak-stats">
+        <img src="https://github-readme-streak-stats.demolab.com/?user=soyames&theme=vue-dark&hide_border=true" alt="GitHub Streak" />
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/anuraghazra/github-readme-stats">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=soyames&layout=compact&theme=vue-dark&hide_border=true" alt="Top Languages" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+### Languages, Frameworks and Tools I use:
+
+<p>
+  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" alt="JavaScript Badge"/>
+  <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=for-the-badge" alt="Python Badge"/>
+  <img src="https://img.shields.io/badge/-R-276DC3?logo=r&logoColor=white&style=for-the-badge" alt="R Badge"/>
+  <img src="https://img.shields.io/badge/-Dart-0175C2?logo=dart&logoColor=white&style=for-the-badge" alt="Dart Badge"/>
+  <img src="https://img.shields.io/badge/-Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" alt="Figma Badge"/>
+  <img src="https://img.shields.io/badge/-Firebase-FFCA28?logo=firebase&logoColor=black&style=for-the-badge" alt="Firebase Badge"/>
+  <img src="https://img.shields.io/badge/-WordPress-21759B?logo=wordpress&logoColor=white&style=for-the-badge" alt="WordPress Badge"/>
+</p>
+
+---
+
+<div align="center">
+    <img src="https://komarev.com/ghpvc/?username=soyames&label=Profile%20views&color=0e75b6&style=flat" alt="soyames's Profile Views"/>
+</div>
