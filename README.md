@@ -14,18 +14,15 @@
 <table>
   <tr>
     <td>
-      <a href="https://github.com/anuraghazra/github-readme-stats">
         <img src="https://github-readme-stats.vercel.app/api?username=soyames&show_icons=true&theme=vue-dark&hide_border=true&rank_icon=percentile" alt="soyames's GitHub Stats" />
       </a>
     </td>
     <td>
-      <a href="https://github-readme-streak-stats.herokuapp.com/?user=soyames&theme=vue-dark&hide_border=true">
         <img src="https://github-readme-streak-stats.herokuapp.com/?user=soyames&theme=vue-dark&hide_border=true" />
       </a>
     </td>
     <td>
-      <a href="https://github.com/anuraghazra/github-readme-stats">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=soyames&layout=compact&theme=vue-dark&hide_border=true" alt="Top Languages" />
+       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=soyames&layout=compact&theme=vue-dark&hide_border=true" alt="Top Languages" />
       </a>
     </td>
   </tr>
