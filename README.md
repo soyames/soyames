@@ -19,8 +19,8 @@
       </a>
     </td>
     <td>
-      <a href="https://github-readme-streak-stats.herokuapp.com/?user=soyames&theme=vue-dark&hide_border=true)">
-        <img src="https://github-readme-streak-stats.demolab.com/?user=soyames&theme=vue-dark&hide_border=true" />
+      <a href="https://github-readme-streak-stats.herokuapp.com/?user=soyames&theme=vue-dark&hide_border=true">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=soyames&theme=vue-dark&hide_border=true" />
       </a>
     </td>
     <td>
