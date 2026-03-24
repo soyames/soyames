@@ -351,6 +351,151 @@ a:hover {
   font-size: 0.95rem;
 }
 
+/* PHOTO HIGHLIGHTS */
+.photo-carousel {
+  position: relative;
+  display: grid;
+  grid-template-columns: 64px 1fr 64px;
+  align-items: center;
+  gap: 18px;
+}
+
+.photo-stage {
+  position: relative;
+  height: min(62vw, 470px);
+  min-height: 290px;
+  overflow: hidden;
+}
+
+.photo-slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(68%, 760px);
+  aspect-ratio: 16 / 9;
+  border-radius: 28px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.7s ease,
+    opacity 0.7s ease,
+    filter 0.7s ease,
+    box-shadow 0.7s ease;
+  transform-origin: center;
+}
+
+.photo-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, rgba(15, 23, 42, 0.18) 100%);
+  pointer-events: none;
+}
+
+.photo-slide.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  z-index: 5;
+  filter: blur(0);
+  box-shadow: var(--shadow-strong);
+}
+
+.photo-slide.left {
+  transform: translate(-115%, -50%) scale(0.88);
+  opacity: 0.65;
+  z-index: 3;
+  filter: blur(4px);
+}
+
+.photo-slide.right {
+  transform: translate(15%, -50%) scale(0.88);
+  opacity: 0.65;
+  z-index: 3;
+  filter: blur(4px);
+}
+
+.photo-slide.hidden-left {
+  transform: translate(-175%, -50%) scale(0.72);
+  opacity: 0;
+  z-index: 1;
+  filter: blur(10px);
+}
+
+.photo-slide.hidden-right {
+  transform: translate(75%, -50%) scale(0.72);
+  opacity: 0;
+  z-index: 1;
+  filter: blur(10px);
+}
+
+.photo-nav {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  font-size: 1.7rem;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.photo-nav:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.photo-meta {
+  max-width: 800px;
+  margin: 26px auto 0;
+  text-align: center;
+}
+
+.photo-meta h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.photo-meta p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.photo-dots {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.photo-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 0;
+  background: color-mix(in srgb, var(--muted) 35%, transparent);
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.photo-dot.active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  transform: scale(1.18);
+}
+
 /* ABOUT */
 .about-grid {
   display: grid;
@@ -748,6 +893,18 @@ footer {
   .two-column-grid {
     grid-template-columns: 1fr;
   }
+
+  .photo-slide {
+    width: min(78%, 760px);
+  }
+
+  .photo-slide.left {
+    transform: translate(-106%, -50%) scale(0.84);
+  }
+
+  .photo-slide.right {
+    transform: translate(6%, -50%) scale(0.84);
+  }
 }
 
 @media (max-width: 860px) {
@@ -778,6 +935,34 @@ footer {
     pointer-events: auto;
     transform: translateY(0);
   }
+
+  .photo-carousel {
+    grid-template-columns: 52px 1fr 52px;
+    gap: 10px;
+  }
+
+  .photo-stage {
+    height: min(72vw, 400px);
+    min-height: 240px;
+  }
+
+  .photo-slide {
+    width: min(86%, 640px);
+  }
+
+  .photo-slide.left,
+  .photo-slide.right {
+    opacity: 0.38;
+    filter: blur(6px);
+  }
+
+  .photo-slide.left {
+    transform: translate(-92%, -50%) scale(0.8);
+  }
+
+  .photo-slide.right {
+    transform: translate(-8%, -50%) scale(0.8);
+  }
 }
 
 @media (max-width: 768px) {
@@ -802,6 +987,28 @@ footer {
     right: 16px;
     bottom: 16px;
   }
+
+  .photo-stage {
+    height: min(88vw, 330px);
+    min-height: 220px;
+  }
+
+  .photo-slide {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .photo-slide.left,
+  .photo-slide.right,
+  .photo-slide.hidden-left,
+  .photo-slide.hidden-right {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .photo-slide.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 @media (max-width: 480px) {
@@ -816,5 +1023,15 @@ footer {
   .btn-main,
   .btn-secondary {
     width: 100%;
+  }
+
+  .photo-carousel {
+    grid-template-columns: 44px 1fr 44px;
+  }
+
+  .photo-nav {
+    width: 44px;
+    height: 44px;
+    font-size: 1.35rem;
   }
 }
