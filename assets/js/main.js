@@ -41,9 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.Typed) {
     new Typed(".typing", {
       strings: [
-        "researcher",
-        "technologist",
-        "Internet governance professional"
+        "IT project manager",
+        "researcher & technologist",
+        "digital policy professional",
+        "Internet governance professional",
+        "UX & web systems specialist"
       ],
       typeSpeed: 55,
       backSpeed: 28,
