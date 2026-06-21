@@ -171,7 +171,8 @@
                     <th>Release</th>
                     <th>Date</th>
                     <th>Assets</th>
-                    <th>Downloads</th>
+                    <th>Total downloads</th>
+                    <th>Downloads/day</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -191,13 +192,18 @@
               assetsHTML = '<em class="text-muted">Source code only</em>';
             }
 
+            const dateObj = new Date(release.published_at);
+            const daysSinceRelease = Math.max(1, (new Date() - dateObj) / (1000 * 60 * 60 * 24));
+            const downloadsPerDay = (totalDownloads / daysSinceRelease).toFixed(1);
+
             allHTML += `
               <tr>
                 <td><strong>${release.name || release.tag_name}</strong>
                 ${release.prerelease ? '<span class="badge bg-warning text-dark ms-2">Pre-release</span>' : ''}</td>
                 <td>${date}</td>
                 <td>${assetsHTML}</td>
-                <td>${totalDownloads}</td>
+                <td>${totalDownloads.toLocaleString()}</td>
+                <td>${downloadsPerDay}</td>
               </tr>
             `;
           });
