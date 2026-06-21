@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.Typed) {
     new Typed(".typing", {
       strings: [
-        "IT project manager",
-        "researcher & technologist",
-        "digital policy professional",
-        "Internet governance professional",
-        "UX & web systems specialist"
+        "Full-Stack Software Engineer",
+        "Mobile App Developer",
+        "Digital Product Builder",
+        "Open Source Contributor",
+        "UX & Web Systems Specialist"
       ],
       typeSpeed: 55,
       backSpeed: 28,
