@@ -41,7 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.Typed) {
     new Typed(".typing", {
       strings: [
-        "Full-Stack Software Engineer",
+        "Software Engineer",
+        "Project Manager",
+        "Digital Policy Expert",
         "Mobile App Developer",
         "Digital Product Builder",
         "Open Source Contributor",
