@@ -13,28 +13,223 @@
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <style>
-    .resume-container {
-      max-width: 900px;
+    body { background-color: #f3f4f6; }
+    .resume-wrapper {
+      max-width: 950px;
       margin: 40px auto;
-      padding: 40px;
-      background-color: var(--surface);
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      background-color: #ffffff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
       font-family: 'Inter', sans-serif;
+      color: #333;
     }
-    .resume-header { text-align: center; margin-bottom: 40px; }
-    .resume-header h1 { margin-bottom: 10px; font-weight: 800; }
-    .resume-header p { color: var(--muted); margin-bottom: 5px; }
-    .resume-section { margin-bottom: 35px; }
-    .resume-section h2 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 700; }
-    .job-item { margin-bottom: 25px; }
-    .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
-    .job-title { font-weight: 700; font-size: 1.2rem; }
-    .job-meta { color: var(--muted); font-style: italic; }
-    .job-item ul { padding-left: 20px; }
-    .job-item li { margin-bottom: 8px; line-height: 1.6; }
-    .skills-list { display: grid; grid-template-columns: 1fr; gap: 10px; }
-    .skills-list strong { color: var(--text); }
+    
+    .resume-header {
+      background-color: #1a365d;
+      color: white;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .resume-header h1 {
+      margin: 0 0 10px;
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .resume-header h2 {
+      margin: 0 0 20px;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #90cdf4;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 0.9rem;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .contact-item a { color: #bee3f8; text-decoration: none; }
+    
+    .resume-body {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .left-col {
+      width: 33%;
+      background-color: #f7fafc;
+      padding: 30px 25px;
+      border-right: 1px solid #e2e8f0;
+    }
+    .right-col {
+      width: 67%;
+      padding: 30px 35px;
+    }
+    
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #2b6cb0;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .left-col .section-title {
+      color: #4a5568;
+      border-bottom-color: #cbd5e0;
+    }
+    
+    .content-block { margin-bottom: 25px; }
+    .content-block:last-child { margin-bottom: 0; }
+    
+    .job-title { font-weight: 700; font-size: 1.1rem; color: #2d3748; }
+    .job-meta { font-size: 0.85rem; color: #718096; margin-bottom: 8px; font-weight: 500; }
+    .job-meta a { color: #3182ce; text-decoration: none; }
+    
+    ul.compact-list {
+      padding-left: 18px;
+      margin: 0;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    ul.compact-list li { margin-bottom: 5px; color: #4a5568; }
+    
+    .skill-category { margin-bottom: 15px; }
+    .skill-category h4 { font-size: 0.95rem; font-weight: 700; color: #2d3748; margin-bottom: 5px; }
+    .skill-category p { font-size: 0.85rem; color: #4a5568; margin: 0; line-height: 1.4; }
+    
+    .education-item { margin-bottom: 15px; font-size: 0.9rem; }
+    .education-item h4 { font-weight: 700; margin: 0 0 3px; font-size: 0.95rem; color: #2d3748;}
+    .education-item p { margin: 0; color: #718096; }
+    
+    .cert-list, .lang-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.85rem;
+      color: #4a5568;
+    }
+    .cert-list li, .lang-list li { margin-bottom: 8px; line-height: 1.4; }
+    
+    .profile-text {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #4a5568;
+      margin-bottom: 25px;
+    }
+
+    .download-bar {
+      text-align: center;
+      margin-top: 40px;
+    }
+    
+    /* Print specific styles for strictly 1-2 pages maximum */
+    @media print {
+      @page {
+        margin: 0.1cm;
+        size: A4 portrait;
+      }
+      body { 
+        background-color: #fff; 
+        margin: 0; 
+        padding: 0; 
+        font-size: 8pt; 
+        line-height: 1.15; 
+      }
+      nav, .download-bar, .theme-toggle { display: none !important; }
+      .container { max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
+      
+      .resume-wrapper {
+        margin: 0;
+        box-shadow: none;
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+      }
+      
+      .resume-header {
+        padding: 10px 15px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        margin-bottom: 5px;
+      }
+      .resume-header h1 {
+        font-size: 13pt;
+        margin-bottom: 2px;
+      }
+      .resume-header h2 {
+        font-size: 9.5pt;
+        margin-bottom: 2px;
+      }
+      .contact-info {
+        font-size: 7pt;
+        gap: 6px;
+      }
+      
+      .resume-body {
+        display: grid;
+        grid-template-columns: 32% 68%;
+        align-items: start;
+      }
+      
+      .left-col {
+        padding: 5px 10px;
+        width: 100%;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .right-col {
+        padding: 5px 10px;
+        width: 100%;
+      }
+      
+      .section-title {
+        font-size: 9pt;
+        padding-bottom: 1px;
+        margin-bottom: 4px;
+        margin-top: 6px;
+      }
+      
+      .content-block { margin-bottom: 4px; page-break-inside: auto; }
+      
+      .profile-text {
+        font-size: 7.5pt;
+        line-height: 1.2;
+        margin-bottom: 6px;
+      }
+      
+      .job-title { font-size: 8pt; margin-bottom: 1px;}
+      .job-meta { font-size: 7pt; margin-bottom: 2px; }
+      
+      .job-item { page-break-inside: auto; margin-bottom: 4px; }
+      
+      ul.compact-list {
+        font-size: 7.5pt;
+        line-height: 1.2;
+        padding-left: 10px;
+        margin-bottom: 4px;
+      }
+      ul.compact-list li { margin-bottom: 1px; page-break-inside: auto; }
+      
+      .skill-category { margin-bottom: 4px; page-break-inside: auto; }
+      .skill-category h4 { font-size: 7.5pt; margin-bottom: 0px; }
+      .skill-category p { font-size: 7pt; margin-bottom: 0px;}
+      
+      .education-item { margin-bottom: 4px; font-size: 7pt; page-break-inside: auto; }
+      .education-item h4 { font-size: 7.5pt; margin-bottom: 0px; }
+      
+      .cert-list, .lang-list { font-size: 7pt; margin-bottom: 4px;}
+      .cert-list li, .lang-list li { margin-bottom: 1px; page-break-inside: auto; }
+    }
   </style>
 </head>
 <body data-theme="light">
@@ -52,140 +247,174 @@
   </nav>
 
   <div class="container mt-5 pt-5">
-    <div class="resume-container">
-      <div class="resume-header">
+    
+    <div class="download-bar">
+      <a href="assets/downloads/Yao_Amevi_Sossou_Resume.pdf" download class="btn-main" style="text-decoration:none; display:inline-block; border: none;">
+        <i class='bx bx-download me-2'></i> Download Resume (PDF)
+      </a>
+    </div>
+
+    <div class="resume-wrapper">
+      <header class="resume-header">
         <h1>Yao Amevi Amessinou SOSSOU</h1>
-        <p class="fs-5 fw-semibold text-primary" style="color: var(--accent) !important;">Software Engineer & Mobile Developer</p>
-        <p>Wagner-Biro-Straße 109, 8020 Graz, Austria | +43 677 64 28 5738 | soyames@gmail.com</p>
-        <p>
-          <a href="https://www.linkedin.com/in/ameviy/" target="_blank">LinkedIn</a> | 
-          <a href="https://github.com/soyames" target="_blank">GitHub</a>
-        </p>
-      </div>
-
-      <div class="resume-section">
-        <h2>Professional Profile</h2>
-        <p>Results-driven Software Engineer and Mobile Developer with a proven track record of designing, building, and deploying complex, production-ready applications. Strong expertise in Flutter, React/Next.js, Python/Django, and modern cloud architectures. Adept at turning complex requirements into scalable digital solutions, demonstrated by independently launching successful platforms serving live users. Multilingual (English, French, German) with excellent cross-functional communication skills.</p>
-      </div>
-
-      <div class="resume-section">
-        <h2>Technical Skills</h2>
-        <div class="skills-list">
-          <div><strong>Frontend & Mobile:</strong> Flutter, React, JavaScript, Angular, Ionic, HTML/CSS, TailwindCSS</div>
-          <div><strong>Backend:</strong> Python (Django), Node.js, REST APIs, WebSockets</div>
-          <div><strong>Cloud & DevOps:</strong> Firebase, Docker & Docker Compose, Git/GitHub Actions, CI/CD, Linux Server Administration</div>
-          <div><strong>Databases:</strong> PostgreSQL, MySQL, NoSQL (Firestore)</div>
-          <div><strong>Other:</strong> AI Integrations (Ollama, Gemini, DeepSeek APIs), Agile/Scrum, Google OAuth, Oracle DB, AWS</div>
+        <h2>Software Engineer & Mobile Developer</h2>
+        <div class="contact-info">
+          <div class="contact-item"><i class='bx bx-map'></i> Wagner-Biro-Straße 109, 8020 Graz, Austria</div>
+          <div class="contact-item"><i class='bx bx-phone'></i> +43 677 64 28 5738</div>
+          <div class="contact-item"><i class='bx bx-envelope'></i> soyames@gmail.com</div>
+          <div class="contact-item"><i class='bx bxl-linkedin-square'></i> <a href="https://www.linkedin.com/in/ameviy/" target="_blank">LinkedIn</a></div>
+          <div class="contact-item"><i class='bx bxl-github'></i> <a href="https://github.com/soyames" target="_blank">GitHub</a></div>
         </div>
-      </div>
-
-      <div class="resume-section">
-        <h2>Featured Production Applications</h2>
+      </header>
+      
+      <div class="resume-body">
+        <aside class="left-col">
+          <div class="content-block">
+            <h3 class="section-title">Technical Skills</h3>
+            
+            <div class="skill-category">
+              <h4>Frontend & Mobile</h4>
+              <p>Flutter, React, JavaScript, Angular, Ionic, HTML/CSS, TailwindCSS</p>
+            </div>
+            <div class="skill-category">
+              <h4>Backend</h4>
+              <p>Python (Django), Node.js, REST APIs, WebSockets</p>
+            </div>
+            <div class="skill-category">
+              <h4>Cloud & DevOps</h4>
+              <p>Firebase, Docker & Compose, Git/GitHub Actions, CI/CD, Linux Server Admin</p>
+            </div>
+            <div class="skill-category">
+              <h4>Databases</h4>
+              <p>PostgreSQL, MySQL, NoSQL (Firestore)</p>
+            </div>
+            <div class="skill-category">
+              <h4>Other</h4>
+              <p>AI Integrations (Ollama, Gemini, DeepSeek APIs), Agile/Scrum, Google OAuth</p>
+            </div>
+          </div>
+          
+          <div class="content-block">
+            <h3 class="section-title">Education</h3>
+            
+            <div class="education-item">
+              <h4>MA Communication, Media, Sound & Interaction Design</h4>
+              <p>FH JOANNEUM, Austria</p>
+              <p>Sep 2022 – Feb 2025</p>
+            </div>
+            <div class="education-item">
+              <h4>BSc Computer Science</h4>
+              <p>Burkina Institute of Technology</p>
+              <p>Oct 2018 – Jul 2021</p>
+            </div>
+            <div class="education-item">
+              <h4>MA & BA Applied English Linguistics</h4>
+              <p>University of Abomey-Calavi</p>
+              <p>2011 – 2016</p>
+            </div>
+          </div>
+          
+          <div class="content-block">
+            <h3 class="section-title">Certifications</h3>
+            <ul class="cert-list">
+              <li>Scrum Master Certification</li>
+              <li>Google IT Support Professional</li>
+              <li>ICSI/CNSS Network Security Specialist</li>
+            </ul>
+          </div>
+          
+          <div class="content-block">
+            <h3 class="section-title">Languages</h3>
+            <ul class="lang-list">
+              <li><strong>French:</strong> Native</li>
+              <li><strong>English:</strong> Fluent</li>
+              <li><strong>German:</strong> Intermediate</li>
+            </ul>
+          </div>
+        </aside>
         
-        <div class="job-item">
-          <div class="job-header">
-            <span class="job-title">BintaCura | Lead Developer</span>
-            <span class="job-meta"><a href="https://bintacura.org/" target="_blank">bintacura.org</a></span>
+        <main class="right-col">
+          <div class="profile-text">
+            <h3 class="section-title">Professional Profile</h3>
+            Results-driven Software Engineer and Mobile Developer with a proven track record of designing, building, and deploying complex, production-ready applications. Strong expertise in Flutter, React/Next.js, Python/Django, and modern cloud architectures. Adept at turning complex requirements into scalable digital solutions, demonstrated by independently launching successful platforms serving live users. Multilingual with excellent cross-functional communication skills.
           </div>
-          <ul>
-            <li>Engineered a comprehensive digital health platform connecting patients, doctors, pharmacies, and insurers in Benin.</li>
-            <li>Built a cross-platform mobile and web application using <strong>Flutter</strong> and <strong>Django</strong>, featuring secure PWA installation, appointment scheduling, digital prescriptions, and payment gateways.</li>
-            <li>Handled end-to-end deployment, ensuring mobile-web app capability, secure routing, and robust state management.</li>
-          </ul>
-        </div>
-
-        <div class="job-item">
-          <div class="job-header">
-            <span class="job-title">Jour2Rencontres | Lead Developer</span>
-            <span class="job-meta"><a href="https://www.jour2rencontres.com/" target="_blank">jour2rencontres.com</a></span>
+          
+          <div class="content-block">
+            <h3 class="section-title">Featured Production Applications</h3>
+            
+            <div class="content-block">
+              <div class="job-title">BintaCura | Lead Developer</div>
+              <div class="job-meta"><a href="https://bintacura.org/" target="_blank">bintacura.org</a></div>
+              <ul class="compact-list">
+                <li>Engineered a comprehensive digital health platform connecting patients, doctors, pharmacies, and insurers in Benin.</li>
+                <li>Built a cross-platform mobile and web application using <strong>Flutter</strong> and <strong>Django</strong>, featuring secure PWA installation, appointment scheduling, digital prescriptions, and payment gateways.</li>
+                <li>Handled end-to-end deployment, ensuring mobile-web app capability, secure routing, and robust state management.</li>
+              </ul>
+            </div>
+            
+            <div class="content-block">
+              <div class="job-title">Jour2Rencontres | Lead Developer</div>
+              <div class="job-meta"><a href="https://www.jour2rencontres.com/" target="_blank">jour2rencontres.com</a></div>
+              <ul class="compact-list">
+                <li>Developed and launched a professional dating application across Web, iOS, and Android platforms using <strong>Flutter</strong> and <strong>Firebase</strong>.</li>
+                <li>Implemented real-time matchmaking, secure Google OAuth authentication, and interactive messaging systems.</li>
+                <li>Managed app store deployment, ensuring strict compliance with security and privacy standards.</li>
+              </ul>
+            </div>
+            
+            <div class="content-block">
+              <div class="job-title">AugmentorAI | Creator & Developer</div>
+              <div class="job-meta"><a href="https://github.com/soyames/AugmentorAI" target="_blank">github.com/soyames/AugmentorAI</a></div>
+              <ul class="compact-list">
+                <li>Built an open-source "Interview Practice Copilot" using <strong>Next.js</strong> and <strong>React</strong>.</li>
+                <li>Integrated real-time WebSocket audio streaming, Speech-to-Text, and multiple LLM providers (Gemini, DeepSeek, local Ollama).</li>
+              </ul>
+            </div>
+            
+            <div class="content-block">
+              <div class="job-title">Fragvroni | Creator & Developer</div>
+              <div class="job-meta"><a href="https://fragvroni.up.railway.app/about/" target="_blank">fragvroni.up.railway.app</a></div>
+              <ul class="compact-list">
+                <li>Built an open-source social benefit application using <strong>Python</strong>.</li>
+                <li>Integrated real-time auto processing ETL pipelines for data synchronization.</li>
+                <li>Developed a progressive web application (PWA) for offline accessibility.</li>
+              </ul>
+            </div>
           </div>
-          <ul>
-            <li>Developed and launched a professional dating application across Web, iOS, and Android platforms using <strong>Flutter</strong> and <strong>Firebase</strong>.</li>
-            <li>Implemented real-time matchmaking, secure Google OAuth authentication, and interactive messaging systems.</li>
-            <li>Managed app store deployment, ensuring strict compliance with security and privacy standards.</li>
-          </ul>
-        </div>
-
-        <div class="job-item">
-          <div class="job-header">
-            <span class="job-title">AugmentorAI | Creator & Developer</span>
-            <span class="job-meta"><a href="https://github.com/soyames/AugmentorAI" target="_blank">github.com/soyames/AugmentorAI</a></span>
+          
+          <div class="content-block" style="margin-top: 20px;">
+            <h3 class="section-title">Professional Experience</h3>
+            
+            <div class="content-block">
+              <div class="job-title">Project Manager & Research Associate</div>
+              <div class="job-meta">FH JOANNEUM, Graz, Austria | Sep 2022 – Jun 2025</div>
+              <ul class="compact-list">
+                <li>Provided technical leadership and operational support for large-scale EU-funded digital research projects.</li>
+                <li>Maintained web platform, ensuring high availability and seamless content delivery.</li>
+                <li>Collaborated with international partners to manage technical integrations and project documentation.</li>
+              </ul>
+            </div>
+            
+            <div class="content-block">
+              <div class="job-title">Software Engineer (Odoo ERP)</div>
+              <div class="job-meta">Nouvelle Expertise Technique, Burkina Faso | Nov 2021 – Feb 2022</div>
+              <ul class="compact-list">
+                <li>Developed and customized internal business modules for Odoo ERP using <strong>Python</strong> and <strong>PostgreSQL</strong>.</li>
+                <li>Debugged complex server issues, performed log analysis, and deployed fixes to production environments.</li>
+              </ul>
+            </div>
+            
+            <div class="content-block">
+              <div class="job-title">Lead, Google Developer Student Clubs</div>
+              <div class="job-meta">Burkina Institute of Technology | Sep 2020 – Aug 2021</div>
+              <ul class="compact-list">
+                <li>Organized coding workshops and mentored students on modern web and mobile development frameworks.</li>
+                <li>Trained peers on Git version control, debugging, and software engineering best practices.</li>
+              </ul>
+            </div>
           </div>
-          <ul>
-            <li>Built an open-source "Interview Practice Copilot" using <strong>Next.js</strong> and <strong>React</strong>.</li>
-            <li>Integrated real-time WebSocket audio streaming, Speech-to-Text, and multiple LLM providers (Gemini, DeepSeek, local Ollama).</li>
-            <li>Developed and launched a professional dating application across Web, iOS, and Android platforms using <strong>Django</strong>.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="job-item">
-          <div class="job-header">
-            <span class="job-title">Fragvroni | Creator & Developer</span>
-            <span class="job-meta"><a href="https://fragvroni.up.railway.app/about/" target="_blank">https://fragvroni.up.railway.app/about/</a></span>
-          </div>
-          <ul>
-            <li>Built an open-source social benefit application using <strong>python</strong>.</li>
-            <li>Integrated real-time auto processing ETL pipelines for data synchronization.</li>
-            <li>Developed a progressive web application (PWA) for offline accessibility.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="resume-section">
-        <h2>Professional Experience</h2>
-        
-        <div class="job-item">
-          <div class="job-header">
-            <span class="job-title">Project Manager & Research Associate</span>
-            <span class="job-meta">FH JOANNEUM, Graz, Austria | Sep 2022 – Jun 2025</span>
-          </div>
-          <ul>
-            <li>Provided technical leadership and operational support for large-scale EU-funded digital research projects.</li>
-            <li>Maintained web platform, ensuring high availability and seamless content delivery.</li>
-            <li>Collaborated with international partners to manage technical integrations and project documentation.</li>
-          </ul>
-        </div>
-
-        <div class="job-item">
-          <div class="job-header">
-            <span class="job-title">Software Engineer (Odoo ERP)</span>
-            <span class="job-meta">Nouvelle Expertise Technique, Burkina Faso | Nov 2021 – Feb 2022</span>
-          </div>
-          <ul>
-            <li>Developed and customized internal business modules for Odoo ERP using <strong>Python</strong> and <strong>PostgreSQL</strong>.</li>
-            <li>Debugged complex server issues, performed log analysis, and deployed fixes to production environments.</li>
-          </ul>
-        </div>
-
-        <div class="job-item">
-          <div class="job-header">
-            <span class="job-title">Lead, Google Developer Student Clubs</span>
-            <span class="job-meta">Burkina Institute of Technology | Sep 2020 – Aug 2021</span>
-          </div>
-          <ul>
-            <li>Organized coding workshops and mentored students on modern web and mobile development frameworks.</li>
-            <li>Trained peers on Git version control, debugging, and software engineering best practices.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="resume-section">
-        <h2>Education</h2>
-        <ul>
-          <li><strong>MA Communication, Media, Sound & Interaction Design</strong> | FH JOANNEUM (Austria) | Sep 2022 – Feb 2025</li>
-          <li><strong>BSc Computer Science</strong> | Burkina Institute of Technology (Burkina Faso) | Oct 2018 – Jul 2021</li>
-          <li><strong>MA & BA Applied English Linguistics</strong> | University of Abomey-Calavi | 2011 – 2016</li>
-        </ul>
-      </div>
-
-      <div class="resume-section">
-        <h2>Certifications</h2>
-        <ul>
-          <li>Scrum Master Certification</li>
-          <li>Google IT Support Professional</li>
-          <li>ICSI/CNSS — Certified Network Security Specialist</li>
-        </ul>
+          
+        </main>
       </div>
     </div>
   </div>
