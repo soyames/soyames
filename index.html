@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700;800&display=swap"
     rel="stylesheet"
   />
 
@@ -48,7 +48,7 @@
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body data-theme="light">
+<body data-theme="dark">
   <div id="particles-js" aria-hidden="true"></div>
 
   <nav class="navbar-custom">
@@ -70,6 +70,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li class="translate-wrap"><div id="google_translate_element"></div></li>
       </ul>
     </div>
   </nav>
@@ -80,7 +81,7 @@
 
   <header class="hero" id="home">
     <div class="container hero-inner">
-      <p class="eyebrow">Project Manager · Digital Policy Expert · Software Engineer · Mobile Developer</p>
+      <p class="eyebrow">Software Engineer · UX/UI Designer · Digital Policy Advocate</p>
 
       <h1>Yao Amevi A. Sossou</h1>
 
@@ -88,7 +89,9 @@
         I am a <span class="typing"></span>
       </p>
 
-      Project Manager, Digital Policy Expert,Software Engineer and Mobile Developer building scalable, production-ready web and mobile applications with a focus on modern frameworks, AI integrations, and responsive UX.
+      <p class="hero-lead">
+        Multidisciplinary digital professional bridging Software Engineering, Human-Centered Design, and Internet Governance. I build scalable, production-ready web and mobile applications with a strong focus on responsive UX and AI integrations.
+      </p>
 
       <div class="hero-actions">
         <a href="#featured" class="btn-main">View Selected Work</a>
@@ -117,7 +120,7 @@
     <div class="container narrow">
       <div class="section-heading">
         <span class="section-kicker">About</span>
-        <h2>Interdisciplinary work across research, digital systems, and governance</h2>
+        <h2>Bridging Technology, Design, and Policy</h2>
       </div>
 
       <div class="about-grid">
@@ -126,18 +129,18 @@
             I am a Full-Stack Software Engineer and Mobile Developer with a proven track record of designing, building, and deploying complex, production-ready applications. My work spans mobile apps serving live users, advanced AI web platforms, and scalable backends.
           </p>
           <p>
-            I specialize in Flutter, React/Next.js, Python/Django, and modern cloud architectures. I have independently launched successful platforms like BintaCura and Jour2Rencontres, and I am deeply passionate about building software that is highly performant, accessible, and user-centric.
+            With a unique multidisciplinary background combining computer science, interaction design, and linguistics, I specialize in creating intuitive, user-centered digital products using Flutter, React/Next.js, and Django. Beyond coding, I am deeply involved in African Internet governance, advocating for digital inclusion and youth empowerment.
           </p>
         </div>
 
         <div class="about-card">
-          <h3>Current Focus</h3>
+          <h3>Core Competencies</h3>
           <ul class="clean-list">
-            <li>Building scalable, high-performance mobile and web applications</li>
-            <li>Integrating modern AI/LLMs into production-ready platforms</li>
-            <li>Software platforms for health, education, and social impact</li>
-            <li>Modern cloud architectures and containerized deployments</li>
-            <li>Cross-platform mobile development with Flutter</li>
+            <li><strong>Software Engineering:</strong> Scalable mobile and web applications</li>
+            <li><strong>UX/UI Design:</strong> Human-centered design & prototyping</li>
+            <li><strong>Digital Policy:</strong> Internet Governance & Youth Advocacy</li>
+            <li><strong>AI Integrations:</strong> LLMs into production-ready platforms</li>
+            <li><strong>Cloud architectures:</strong> Containerized deployments</li>
           </ul>
         </div>
       </div>
@@ -159,7 +162,7 @@
         <article class="feature-card">
           <div class="feature-top">
             <span class="feature-badge">Civic Tech & Open Data</span>
-            <h3>Frag Vroni</h3>
+            <h3><a href="https://fragvroni.up.railway.app/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Frag Vroni <i class='bx bx-link-external' style='font-size: 0.8em; color: var(--muted);'></i></a></h3>
             <p class="feature-role">Architect & Developer</p>
           </div>
           <p>
@@ -174,25 +177,41 @@
 
         <article class="feature-card">
           <div class="feature-top">
-            <span class="feature-badge">Digital Health</span>
-            <h3>BintaCura</h3>
-            <p class="feature-role">Lead Developer • Product & System Architecture</p>
+            <span class="feature-badge">Digital Health & UX</span>
+            <h3><a href="https://bintacura.org/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">BintaCura <i class='bx bx-link-external' style='font-size: 0.8em; color: var(--muted);'></i></a></h3>
+            <p class="feature-role">Lead Developer & Product Architect</p>
           </div>
           <p>
             Development of a digital health platform connecting telemedicine, healthcare workflows,
-            payments, pharmacy services, and data-aware infrastructure for scalable care delivery.
+            payments, pharmacy services, and data-aware infrastructure.
           </p>
           <ul class="feature-points">
-            <li>Platform architecture and feature planning</li>
-            <li>Health-tech workflows and sustainable service design</li>
-            <li>Privacy, interoperability, and governance-aware thinking</li>
+            <li>Responsive UI and frontend state handling</li>
+            <li>User-centered design tailored to health services</li>
+            <li>Platform architecture and secure cloud storage</li>
+          </ul>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-top">
+            <span class="feature-badge">UX/UI Design</span>
+            <h3>GreenCommute</h3>
+            <p class="feature-role">UX/UI Designer & Frontend Developer</p>
+          </div>
+          <p>
+            An application prototype focused on routing, components, and responsive UI for a mobility use case.
+          </p>
+          <ul class="feature-points">
+            <li>Angular and Ionic framework implementation</li>
+            <li>Component-based architecture and routing</li>
+            <li>User-centered interactive product prototyping</li>
           </ul>
         </article>
 
         <article class="feature-card">
           <div class="feature-top">
             <span class="feature-badge">Mobile App</span>
-            <h3>jour2rencontre</h3>
+            <h3><a href="https://www.jour2rencontres.com/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">jour2rencontre <i class='bx bx-link-external' style='font-size: 0.8em; color: var(--muted);'></i></a></h3>
             <p class="feature-role">Flutter Developer</p>
           </div>
           <p>
@@ -208,7 +227,7 @@
         <article class="feature-card">
           <div class="feature-top">
             <span class="feature-badge">AI / Typescript</span>
-            <h3>AugmentorAI</h3>
+            <h3><a href="https://github.com/soyames/AugmentorAI" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">AugmentorAI <i class='bx bx-link-external' style='font-size: 0.8em; color: var(--muted);'></i></a></h3>
             <p class="feature-role">Full-Stack AI Developer</p>
           </div>
           <p>
@@ -241,8 +260,81 @@
       </div>
     </div>
   </section>
+  <section class="section" id="advocacy">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">Policy & Governance</span>
+        <h2>Internet Governance & Advocacy</h2>
+        <p>
+          Active leadership and participation in shaping the future of digital inclusion and internet policy across Africa and globally.
+        </p>
+      </div>
 
-  <section class="section" id="experience">
+      <div class="policy-grid" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px;">
+        <article class="policy-card reveal" style="display: flex; gap: 18px; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;">
+          <div class="policy-icon" style="width: 56px; height: 56px; min-width: 56px; border-radius: 16px; display: grid; place-items: center; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: white; font-size: 1.6rem; box-shadow: var(--shadow-strong);"><i class="bx bx-briefcase-alt-2"></i></div>
+          <div>
+            <h3 style="margin: 0 0 6px; font-size: 1.15rem; font-weight: 800;"><a href="https://icann-community.atlassian.net/wiki/spaces/NPOCC/overview" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">NPOC (ICANN) <i class='bx bx-link-external' style='font-size: 0.8em; color: var(--muted);'></i></a></h3>
+            <p class="policy-role" style="margin: 0 0 12px; color: var(--muted); font-weight: 600;">Policy Chair (Oct 2025 – Present)</p>
+            <ul style="margin: 0; padding-left: 18px;">
+              <li style="margin-bottom: 8px; color: var(--muted);">Managing policy development and coordinating statements within ICANN and NCSG.</li>
+              <li style="margin-bottom: 8px; color: var(--muted);">Promoting DNS security and stability solutions (DNSSEC, DoH, DoT, DAAR).</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="policy-card reveal" style="display: flex; gap: 18px; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;">
+          <div class="policy-icon" style="width: 56px; height: 56px; min-width: 56px; border-radius: 16px; display: grid; place-items: center; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: white; font-size: 1.6rem; box-shadow: var(--shadow-strong);"><i class="bx bx-globe"></i></div>
+          <div>
+            <h3 style="margin: 0 0 6px; font-size: 1.15rem; font-weight: 800;">Youth IGF Benin</h3>
+            <p class="policy-role" style="margin: 0 0 12px; color: var(--muted); font-weight: 600;">Founder & Coordinator (2023–2025)</p>
+            <ul style="margin: 0; padding-left: 18px;">
+              <li style="margin-bottom: 8px; color: var(--muted);">Empowering youth to participate in national and regional digital policy-making.</li>
+              <li style="margin-bottom: 8px; color: var(--muted);">Bridging the digital divide with inclusive policy development.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="policy-card reveal" style="display: flex; gap: 18px; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;">
+          <div class="policy-icon" style="width: 56px; height: 56px; min-width: 56px; border-radius: 16px; display: grid; place-items: center; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: white; font-size: 1.6rem; box-shadow: var(--shadow-strong);"><i class="bx bx-network-chart"></i></div>
+          <div>
+            <h3 style="margin: 0 0 6px; font-size: 1.15rem; font-weight: 800;">West Africa Internet Governance Forum (WAIGF)</h3>
+            <p class="policy-role" style="margin: 0 0 12px; color: var(--muted); font-weight: 600;">Communications & Web Support</p>
+            <ul style="margin: 0; padding-left: 18px;">
+              <li style="margin-bottom: 8px; color: var(--muted);">Maintaining digital content to support public communication and event visibility.</li>
+              <li style="margin-bottom: 8px; color: var(--muted);">Fostering sustainable digital ecosystems through information management.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="policy-card reveal" style="display: flex; gap: 18px; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;">
+          <div class="policy-icon" style="width: 56px; height: 56px; min-width: 56px; border-radius: 16px; display: grid; place-items: center; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: white; font-size: 1.6rem; box-shadow: var(--shadow-strong);"><i class="bx bx-buildings"></i></div>
+          <div>
+            <h3 style="margin: 0 0 6px; font-size: 1.15rem; font-weight: 800;">International Forums (ICANN & ITU)</h3>
+            <p class="policy-role" style="margin: 0 0 12px; color: var(--muted); font-weight: 600;">Participant & Contributor</p>
+            <ul style="margin: 0; padding-left: 18px;">
+              <li style="margin-bottom: 8px; color: var(--muted);">Participating in global consultations on internet standards and telecommunications.</li>
+              <li style="margin-bottom: 8px; color: var(--muted);">Advocating for human-centered innovation in the Global South.</li>
+            </ul>
+          </div>
+        </article>
+        
+        <article class="policy-card reveal" style="display: flex; gap: 18px; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;">
+          <div class="policy-icon" style="width: 56px; height: 56px; min-width: 56px; border-radius: 16px; display: grid; place-items: center; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: white; font-size: 1.6rem; box-shadow: var(--shadow-strong);"><i class="bx bx-group"></i></div>
+          <div>
+            <h3 style="margin: 0 0 6px; font-size: 1.15rem; font-weight: 800;">Internet Society (ISOC) Benin</h3>
+            <p class="policy-role" style="margin: 0 0 12px; color: var(--muted); font-weight: 600;">IT Project Manager (Volunteer)</p>
+            <ul style="margin: 0; padding-left: 18px;">
+              <li style="margin-bottom: 8px; color: var(--muted);">Co-led web implementation and supported software architecture for digital projects.</li>
+              <li style="margin-bottom: 8px; color: var(--muted);">Coordinated technical work with community organizational needs.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="experience">
   <div class="container">
     <div class="section-heading">
       <span class="section-kicker">Experience</span>
@@ -288,12 +380,12 @@
       </article>
 
       <article class="experience-item reveal">
-        <h3>Research Associate & Technical Lead</h3>
+        <h3>Project Manager & Research Associate</h3>
         <p class="experience-org">FH JOANNEUM University of Applied Sciences · Graz, Austria</p>
         <span class="experience-date">Sep 2022 – Jun 2025</span>
         <ul>
           <li>Provided technical leadership and operational support for large-scale EU-funded digital research projects.</li>
-          <li>Developed and maintained web platforms, ensuring high availability and seamless content delivery.</li>
+          <li>Maintained web platform, ensuring high availability and seamless content delivery.</li>
         </ul>
       </article>
 
@@ -358,12 +450,16 @@
         <div class="content-card reveal">
           <h3>Certifications</h3>
           <ul class="clean-list">
+            <li>Artificial Intelligence (AI) Ethics Summer School</li>
+            <li>CertNexus Extract, Transform, and Load Data</li>
+            <li>Foundations of User Experience (UX) Design - Google</li>
+            <li>Google Foundations of Project Management</li>
             <li>Google IT Support Professional Certificate</li>
             <li>ICSI | CNSS Certified Network Security Specialist</li>
-            <li>Scrum Master Certification</li>
-            <li>Foundations of User Experience (UX) Design - Google</li>
-            <li>Product Discovery Sprint</li>
             <li>Project Management Foundations</li>
+            <li>Scrum Master Certification</li>
+            <li>Digital Product School - Product Discovery Sprint</li>
+            <li>International Startup League - Startup Festival 2023</li>
           </ul>
         </div>
 
@@ -486,5 +582,14 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
