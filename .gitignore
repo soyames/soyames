@@ -1,0 +1,6 @@
+mcps
+terminals
+agent-tools
+e2e
+node_modules/
+package-lock.json
