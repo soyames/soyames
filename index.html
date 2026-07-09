@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yao Amevi A. Sossou | Project Manager | Digital Policy Expert | Software Engineer & Mobile Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Yao Amevi A. Sossou - Full-Stack Software Engineer and Mobile Developer with experience in Flutter, Javascript, Django, Docker, and AI systems." />
+  <meta name="author" content="Yao Amevi A. Sossou" />
+  <meta name="keywords" content="Yao Sossou, Software Engineer, Mobile Developer, Flutter, Javascript, Django, Docker, UX Design, Web Development, AI Systems" />
+
+  <meta property="og:title" content="Yao Amevi A. Sossou | Software Engineer & Mobile Developer" />
+  <meta property="og:description" content="Full-Stack Software Engineering, Mobile App Development, UX/UI, and AI Integrations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://soyames.com/" />
+  <meta property="og:image" content="https://soyames.com/assets/img/logo-profile.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yao Amevi A. Sossou | Software Engineer & Mobile Developer" />
+  <meta name="twitter:description" content="Software Engineer · Mobile App Developer · Digital Product Builder" />
+
+  <link rel="canonical" href="https://soyames.com/" />
+  <link rel="icon" type="image/png" href="assets/img/logo-profile.png" />
+
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <!-- Boxicons -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts for Stitch Design -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400&family=Lexend:wght@500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "on-tertiary-container": "#000703",
+                    "on-secondary-fixed": "#0d1c2d",
+                    "on-primary-fixed": "#07006c",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "surface-bright": "#31394d",
+                    "surface-container-lowest": "#060e20",
+                    "on-background": "#dae2fd",
+                    "primary": "#c0c1ff",
+                    "background": "#0b1326",
+                    "surface-variant": "#2d3449",
+                    "on-surface-variant": "#c7c4d7",
+                    "tertiary-fixed": "#6ffbbe",
+                    "on-secondary-fixed-variant": "#39485a",
+                    "inverse-primary": "#494bd6",
+                    "secondary": "#b9c8de",
+                    "primary-fixed": "#e1e0ff",
+                    "error": "#ffb4ab",
+                    "surface-tint": "#c0c1ff",
+                    "on-error": "#690005",
+                    "inverse-on-surface": "#283044",
+                    "on-primary-container": "#0d0096",
+                    "on-surface": "#dae2fd",
+                    "surface-dim": "#0b1326",
+                    "surface": "#0b1326",
+                    "secondary-container": "#39485a",
+                    "inverse-surface": "#dae2fd",
+                    "on-tertiary-fixed": "#002113",
+                    "tertiary": "#4edea3",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "outline-variant": "#464554",
+                    "surface-container-low": "#131b2e",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary": "#233143",
+                    "surface-container-high": "#222a3d",
+                    "primary-container": "#8083ff",
+                    "surface-container": "#171f33",
+                    "outline": "#908fa0",
+                    "secondary-fixed": "#d4e4fa",
+                    "surface-container-highest": "#2d3449",
+                    "on-secondary-container": "#a7b6cc",
+                    "secondary-fixed-dim": "#b9c8de",
+                    "tertiary-container": "#00885d",
+                    "on-tertiary": "#003824",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "error-container": "#93000a",
+                    "on-primary": "#1000a9"
+                },
+                borderRadius: {
+                    DEFAULT: "0.25rem",
+                    lg: "0.5rem",
+                    xl: "0.75rem",
+                    full: "9999px"
+                },
+                spacing: {
+                    "stack-md": "16px",
+                    "stack-sm": "8px",
+                    "gutter": "24px",
+                    "section-gap": "120px",
+                    "container-max": "1280px",
+                    "margin-mobile": "20px",
+                    "stack-lg": "32px"
+                },
+                fontFamily: {
+                    "headline-md": ["Lexend"],
+                    "code": ["JetBrains Mono"],
+                    "display-lg": ["Lexend"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-sm": ["Lexend"],
+                    "display-lg-mobile": ["Lexend"]
+                },
+                fontSize: {
+                    "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+                    "code": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+                    "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                    "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                    "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                    "label-md": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "600" }],
+                    "headline-sm": ["24px", { lineHeight: "1.4", fontWeight: "500" }],
+                    "display-lg-mobile": ["40px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }]
+                }
+            }
+        }
+    }
+  </script>
+  <style>
+    body {
+        background-color: theme('colors.background') !important;
+        color: theme('colors.on-background') !important;
+    }
+    
+    .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .glass-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+        z-index: 1;
+    }
+
+    .ambient-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 30%, rgba(78, 222, 163, 0.05) 0%, transparent 50%);
+        pointer-events: none;
+    }
+    
+    /* Used for particles.js */
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="antialiased min-h-screen flex flex-col relative overflow-x-hidden">
+
+  <!-- Backgrounds -->
+  <div id="particles-js" aria-hidden="true"></div>
+  <div class="ambient-bg"></div>
+
+  <!-- TopNavBar -->
+  <nav class="bg-surface/80 backdrop-blur-md text-primary font-label-md text-label-md fixed top-0 w-full border-b border-outline-variant/10 shadow-sm z-50 transition-all duration-300 ease-in-out">
+    <div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-20">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="assets/img/logo-profile.png" alt="Logo" class="w-10 h-10 rounded-full border border-outline-variant/20">
+        <span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight uppercase">SOYAMES</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#about">About</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#featured">Work</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#advocacy">Policy</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#experience">Experience</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#skills">Skills</a>
+        <div id="google_translate_element" class="ml-4"></div>
+      </div>
+
+      <a href="#contact" class="bg-white text-primary-container px-6 py-2 rounded-full font-label-md text-label-md hover:bg-surface-variant/20 transition-all duration-300 ease-in-out hidden md:block">
+        Contact
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="md:hidden text-on-surface nav-toggle" id="mobile-menu-btn" aria-label="Toggle navigation">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay (hidden by default) -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-surface/95 backdrop-blur-md pt-24 px-8 flex flex-col gap-6 font-headline-sm text-center">
+    <a href="#about" class="mobile-nav-link text-on-surface">About</a>
+    <a href="#featured" class="mobile-nav-link text-on-surface">Work</a>
+    <a href="#advocacy" class="mobile-nav-link text-on-surface">Policy</a>
+    <a href="#experience" class="mobile-nav-link text-on-surface">Experience</a>
+    <a href="#skills" class="mobile-nav-link text-on-surface">Skills</a>
+    <a href="#contact" class="mobile-nav-link text-on-surface">Contact</a>
+  </div>
+
+  <main class="flex-grow pt-32 pb-section-gap">
+    
+    <!-- Hero Section -->
+    <section id="home" class="max-w-container-max mx-auto px-gutter md:px-margin-mobile grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[716px] mb-section-gap relative">
+      <div class="z-10">
+        <p class="font-label-md text-primary mb-4 uppercase tracking-widest">Software Engineer · UX/UI Designer · Digital Policy Advocate</p>
+        <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-stack-md leading-tight">
+          Yao Amevi A. Sossou
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-[720px] mb-8">
+          I am a <span class="typing text-primary font-bold"></span>
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-[720px] mb-stack-lg">
+          Multidisciplinary digital professional bridging Software Engineering, Human-Centered Design, and Internet Governance. I build scalable, production-ready web and mobile applications with a strong focus on responsive UX and AI integrations.
+        </p>
+
+        <div class="flex gap-4 mb-8">
+          <a href="#featured" class="inline-block bg-white text-on-primary-container px-8 py-3 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity shadow-[0_20px_40px_rgba(99,102,241,0.15)] text-center">
+            View Selected Work
+          </a>
+          <a href="/resume" class="inline-block glass-card text-white px-8 py-3 rounded-full font-label-md text-label-md hover:bg-white/10 transition-colors text-center border border-outline-variant/30">
+            View Résumé
+          </a>
+        </div>
+
+        <div class="flex gap-6 text-2xl text-on-surface-variant">
+          <a href="https://www.linkedin.com/in/ameviy" target="_blank" rel="noopener" class="hover:text-primary transition-colors"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/soyames" target="_blank" rel="noopener" class="hover:text-primary transition-colors"><i class="bx bxl-github"></i></a>
+          <a href="https://orcid.org/0009-0002-6203-855X" target="_blank" rel="noopener" class="hover:text-primary transition-colors"><i class="bx bx-link-external"></i></a>
+          <a href="mailto:soyames@gmail.com" class="hover:text-primary transition-colors"><i class="bx bx-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Creative Animation Side -->
+      <div class="relative hidden lg:flex justify-center items-center h-full w-full perspective-[1000px]">
+        <style>
+          .hero-creative-card {
+            transform-style: preserve-3d;
+            animation: float 6s ease-in-out infinite;
+          }
+          .hero-creative-layer {
+            transform: translateZ(50px);
+          }
+          .hero-creative-bg {
+            animation: pulse-glow 4s ease-in-out infinite alternate;
+          }
+          @keyframes float {
+            0% { transform: translateY(0px) rotateX(10deg) rotateY(-10deg); }
+            50% { transform: translateY(-20px) rotateX(15deg) rotateY(-5deg); }
+            100% { transform: translateY(0px) rotateX(10deg) rotateY(-10deg); }
+          }
+          @keyframes pulse-glow {
+            0% { opacity: 0.4; transform: scale(0.95); }
+            100% { opacity: 0.8; transform: scale(1.05); }
+          }
+        </style>
+        
+        <!-- Glowing background blob -->
+        <div class="absolute w-64 h-64 bg-primary/20 rounded-full blur-[80px] hero-creative-bg"></div>
+        <div class="absolute w-48 h-48 bg-tertiary/20 rounded-full blur-[60px] translate-x-12 translate-y-12 hero-creative-bg" style="animation-delay: 2s;"></div>
+
+        <!-- 3D Glass Card -->
+        <div class="glass-card hero-creative-card w-80 h-96 rounded-2xl border border-white/20 shadow-2xl relative flex flex-col items-center justify-center p-8 text-center bg-gradient-to-br from-white/5 to-transparent backdrop-blur-xl">
+          
+          <!-- Code icon floating -->
+          <div class="hero-creative-layer bg-primary/20 p-4 rounded-full mb-6 border border-primary/30 shadow-[0_0_20px_rgba(192,193,255,0.2)]">
+            <i class='bx bx-code-alt text-4xl text-primary'></i>
+          </div>
+          
+          <div class="hero-creative-layer">
+            <h3 class="font-headline-sm text-xl text-on-surface mb-2 tracking-wide">Building the Future</h3>
+            <p class="font-code text-xs text-on-surface-variant/70 mb-6 font-mono">import { innovation } from 'soyames';</p>
+            
+            <div class="flex gap-2 justify-center">
+              <span class="bg-surface/50 border border-outline-variant/30 text-xs px-2 py-1 rounded text-primary font-mono">Flutter</span>
+              <span class="bg-surface/50 border border-outline-variant/30 text-xs px-2 py-1 rounded text-tertiary font-mono">Python</span>
+              <span class="bg-surface/50 border border-outline-variant/30 text-xs px-2 py-1 rounded text-secondary font-mono">Javascript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-container-max mx-auto px-gutter md:px-margin-mobile mb-section-gap">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+        <div class="md:col-span-5 relative">
+          <div class="glass-card rounded-xl overflow-hidden aspect-square relative p-2">
+            <img class="w-full h-full object-cover rounded-lg filter grayscale hover:grayscale-0 transition-all duration-500 opacity-80 mix-blend-luminosity hover:mix-blend-normal" src="assets/img/logo-profile.png" alt="Yao Amevi A. Sossou"/>
+          </div>
+        </div>
+        <div class="md:col-span-7 flex flex-col gap-stack-md">
+          <p class="font-label-md text-primary uppercase tracking-widest">About</p>
+          <h2 class="font-headline-md text-headline-md text-on-surface">Bridging Technology, Design, and Policy</h2>
+          <div class="w-12 h-1 bg-primary mb-4 rounded-full"></div>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-[720px]">
+            I am a Software Engineer and Mobile Developer with a proven track record of designing, building, and deploying complex, production-ready applications. My work spans mobile apps serving live users, advanced AI web platforms, and scalable backends.
+          </p>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-[720px] mb-6">
+            With a unique multidisciplinary background combining computer science, interaction design, and linguistics, I specialize in creating intuitive, user-centered digital products using Flutter, Javascript, and Django. Beyond coding, I am deeply involved in ICANN and the Internet governance ecosystem, advocating for digital inclusion and youth empowerment.
+          </p>
+          
+          <div class="glass-card p-6 rounded-xl">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Core Competencies</h3>
+            <ul class="space-y-2 font-body-md text-on-surface-variant">
+              <li class="flex items-center gap-2"><i class="bx bx-check text-primary"></i> <strong>Software Engineering:</strong> Scalable mobile and web applications</li>
+              <li class="flex items-center gap-2"><i class="bx bx-check text-primary"></i> <strong>UX/UI Design:</strong> Human-centered design & prototyping</li>
+              <li class="flex items-center gap-2"><i class="bx bx-check text-primary"></i> <strong>Digital Policy:</strong> Internet Governance & Youth Advocacy</li>
+              <li class="flex items-center gap-2"><i class="bx bx-check text-primary"></i> <strong>AI Integrations:</strong> LLMs into production-ready platforms</li>
+              <li class="flex items-center gap-2"><i class="bx bx-check text-primary"></i> <strong>Cloud architectures:</strong> Containerized deployments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <section id="featured" class="max-w-container-max mx-auto px-gutter md:px-margin-mobile mb-section-gap">
+      <div class="mb-stack-lg">
+        <p class="font-label-md text-primary uppercase tracking-widest">Selected Work</p>
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Featured projects and contributions</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          A curated selection of work across design & research, digital health, Internet governance, civic technology, and research-driven digital systems.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+        
+        <!-- FragVroni -->
+        <div class="glass-card rounded-xl p-6 flex flex-col gap-stack-md group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-primary/20 transition-colors"></div>
+          <div class="w-full h-48 rounded-lg overflow-hidden mb-2 relative">
+            <img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="assets/img/projects/fragvroni_current.png" alt="FragVroni"/>
+          </div>
+          <div class="flex flex-col gap-2 relative z-10 flex-grow">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-label-md uppercase tracking-wider text-primary">Civic Tech & Open Data</span>
+              <a href="https://fragvroni.up.railway.app/" target="_blank" class="hover:text-primary"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">open_in_new</span></a>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">FragVroni</h3>
+            <p class="text-sm font-semibold text-on-surface-variant mb-2">Architect & Developer</p>
+            <p class="font-body-md text-sm text-on-surface-variant line-clamp-3 mb-4 flex-grow">A privacy-first progressive web app helping citizens in Austria navigate and find social benefits they are entitled to, driven by official open data.</p>
+            <ul class="font-body-md text-sm text-on-surface-variant list-disc pl-4 mb-4">
+              <li>Privacy-first in-browser eligibility checks</li>
+              <li>Automated ETL pipeline integrating live government data</li>
+              <li>Human-in-the-loop review architecture for accuracy</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BintaCura -->
+        <div class="glass-card rounded-xl p-6 flex flex-col gap-stack-md group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/10 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-tertiary/20 transition-colors"></div>
+          <div class="w-full h-48 rounded-lg overflow-hidden mb-2 relative">
+            <img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="assets/img/projects/bintacura_mockup.png" alt="BintaCura"/>
+          </div>
+          <div class="flex flex-col gap-2 relative z-10 flex-grow">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-label-md uppercase tracking-wider text-primary">Digital Health & UX</span>
+              <a href="https://bintacura.org/" target="_blank" class="hover:text-primary"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">open_in_new</span></a>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">BintaCura</h3>
+            <p class="text-sm font-semibold text-on-surface-variant mb-2">Fullstack Developer & Product Architect</p>
+            <p class="font-body-md text-sm text-on-surface-variant line-clamp-3 mb-4 flex-grow">Development of a digital health platform connecting telemedicine, healthcare workflows, payments, pharmacy services, and data-aware infrastructure.</p>
+            <ul class="font-body-md text-sm text-on-surface-variant list-disc pl-4 mb-4">
+              <li>Responsive UI and frontend state handling</li>
+              <li>User-centered design tailored to health services</li>
+              <li>Platform architecture and secure cloud storage</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- GreenCommute -->
+        <div class="glass-card rounded-xl p-6 flex flex-col gap-stack-md group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-secondary/20 transition-colors"></div>
+          <div class="w-full h-48 rounded-lg overflow-hidden mb-2 relative">
+            <img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="assets/img/projects/greencommute_mockup.png" alt="GreenCommute"/>
+          </div>
+          <div class="flex flex-col gap-2 relative z-10 flex-grow">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-label-md uppercase tracking-wider text-primary">UX/UI Design</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">GreenCommute</h3>
+            <p class="text-sm font-semibold text-on-surface-variant mb-2">UX/UI Designer & Frontend Developer</p>
+            <p class="font-body-md text-sm text-on-surface-variant line-clamp-3 mb-4 flex-grow">An application prototype focused on routing, components, and responsive UI for a mobility use case.</p>
+            <ul class="font-body-md text-sm text-on-surface-variant list-disc pl-4 mb-4">
+              <li>Angular and Ionic framework implementation</li>
+              <li>Component-based architecture and routing</li>
+              <li>User-centered interactive product prototyping</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Jour2Rencontre -->
+        <div class="glass-card rounded-xl p-6 flex flex-col gap-stack-md group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-secondary/20 transition-colors"></div>
+          <div class="w-full h-48 rounded-lg overflow-hidden mb-2 relative">
+            <img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="assets/img/projects/jour2rencontre_current.png" alt="jour2rencontre"/>
+          </div>
+          <div class="flex flex-col gap-2 relative z-10 flex-grow">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-label-md uppercase tracking-wider text-primary">Mobile App</span>
+              <a href="https://www.jour2rencontres.com/" target="_blank" class="hover:text-primary"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">open_in_new</span></a>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">jour2rencontre</h3>
+            <p class="text-sm font-semibold text-on-surface-variant mb-2">Flutter Developer</p>
+            <p class="font-body-md text-sm text-on-surface-variant line-clamp-3 mb-4 flex-grow">A comprehensive Flutter mobile application designed to facilitate meaningful meetings and social connectivity with a Firebase backend.</p>
+            <ul class="font-body-md text-sm text-on-surface-variant list-disc pl-4 mb-4">
+              <li>Cross-platform mobile architecture</li>
+              <li>Real-time data synchronization</li>
+              <li>Interactive UI/UX design</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- AugmentorAI -->
+        <div class="glass-card rounded-xl p-6 flex flex-col gap-stack-md group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-primary/20 transition-colors"></div>
+          <div class="w-full h-48 rounded-lg overflow-hidden mb-2 relative">
+            <img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="assets/img/projects/augmentor_mockup.png" alt="AugmentorAI"/>
+          </div>
+          <div class="flex flex-col gap-2 relative z-10 flex-grow">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-label-md uppercase tracking-wider text-primary">AI / Typescript</span>
+              <a href="https://github.com/soyames/AugmentorAI" target="_blank" class="hover:text-primary"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">open_in_new</span></a>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">AugmentorAI</h3>
+            <p class="text-sm font-semibold text-on-surface-variant mb-2">Full-Stack AI Developer</p>
+            <p class="font-body-md text-sm text-on-surface-variant line-clamp-3 mb-4 flex-grow">An AI-powered interview practice and preparation copilot. Built with Javascript, Electron, and a Python backend supporting local and cloud LLMs.</p>
+            <ul class="font-body-md text-sm text-on-surface-variant list-disc pl-4 mb-4">
+              <li>Live speech-to-text transcription</li>
+              <li>Real-time AI answer suggestions</li>
+              <li>Multi-LLM fallback architecture</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- WADFConnect -->
+        <div class="glass-card rounded-xl p-6 flex flex-col gap-stack-md group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/10 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-tertiary/20 transition-colors"></div>
+          <div class="w-full h-48 rounded-lg overflow-hidden mb-2 relative">
+            <img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="assets/img/projects/wadfc.png" alt="WADFConnect"/>
+          </div>
+          <div class="flex flex-col gap-2 relative z-10 flex-grow">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-label-md uppercase tracking-wider text-primary">Web Platform</span>
+              <a href="https://wadfc-onnect.vercel.app/" target="_blank" class="hover:text-primary"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">open_in_new</span></a>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">WADFConnect</h3>
+            <p class="text-sm font-semibold text-on-surface-variant mb-2">Project manager & Developer</p>
+            <p class="font-body-md text-sm text-on-surface-variant line-clamp-3 mb-4 flex-grow">The central digital hub for the West African Design Forum, connecting creatives and celebrating the creative industry across the region.</p>
+            <ul class="font-body-md text-sm text-on-surface-variant list-disc pl-4 mb-4">
+              <li>Modern TypeScript web application</li>
+              <li>Community and networking features</li>
+              <li>Event integration and showcase</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Internet Governance Resource Hub -->
+        <div class="glass-card rounded-xl p-6 flex flex-col gap-stack-md group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-secondary/20 transition-colors"></div>
+          <div class="w-full h-48 rounded-lg overflow-hidden mb-2 relative">
+            <img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="assets/img/projects/ig_hub_mockup.png" alt="Internet Governance Resource Hub"/>
+          </div>
+          <div class="flex flex-col gap-2 relative z-10 flex-grow">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-label-md uppercase tracking-wider text-primary">Internet Governance</span>
+              <a href="#" target="_blank" class="hover:text-primary"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">open_in_new</span></a>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">Internet Governance Resource Hub</h3>
+            <p class="text-sm font-semibold text-on-surface-variant mb-2">Researcher & Repository Maintainer</p>
+            <p class="font-body-md text-sm text-on-surface-variant line-clamp-4 mb-4 flex-grow">Welcome to the Internet Governance Resource Hub, a collaborative, open-access directory for anyone interested in the Internet Governance (IG) ecosystem. Whether you're a policymaker, researcher, youth advocate, civil society leader, or curious newcomer, this hub is here to help you discover key opportunities, resources, and communities across the globe.</p>
+            <ul class="font-body-md text-sm text-on-surface-variant list-disc pl-4 mb-4">
+              <li>Curating and feeding the resource database</li>
+              <li>Facilitating knowledge exchange and collaboration</li>
+              <li>Maintaining up-to-date information on IG initiatives and events</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Musikmaschine -->
+        <div class="glass-card rounded-xl p-6 flex flex-col gap-stack-md group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-primary/20 transition-colors"></div>
+          <div class="w-full h-48 rounded-lg overflow-hidden mb-2 relative">
+            <img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="assets/img/projects/Musikmaschine_Auftritt_2-2048x1365.jpg" alt="Musikmaschine"/>
+          </div>
+          <div class="flex flex-col gap-2 relative z-10 flex-grow">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-label-md uppercase tracking-wider text-primary">Design & Research</span>
+              <a href="https://musikmaschine.fh-joanneum.design/" target="_blank" class="hover:text-primary"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">open_in_new</span></a>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">Musikmaschine</h3>
+            <p class="text-sm font-semibold text-on-surface-variant mb-2">Interaction Designer</p>
+            <p class="font-body-md text-sm text-on-surface-variant line-clamp-3 mb-4 flex-grow">The music machine was developed by master's students of "Sound Design" (in cooperation with the University of Music and Performing Arts Graz) and "Interaction Design". Concept and prototype by students of the FH JOANNEUM master's programs "Sound Design" and "Interaction Design"</p>
+            <ul class="font-body-md text-sm text-on-surface-variant list-disc pl-4 mb-4">
+              <li>Design and prototyping of interactive systems</li>
+              <li>Implementation of user-centered design principles</li>
+              <li>Collaboration with interdisciplinary teams</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- GREAT THINGS ARE MADE TOGETHER -->
+        <div class="glass-card rounded-xl p-6 flex flex-col gap-stack-md group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/10 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-tertiary/20 transition-colors"></div>
+          <div class="w-full h-48 rounded-lg overflow-hidden mb-2 relative">
+            <img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="assets/img/projects/grosse-dinge-werden-gemeinsam-gemacht.jpg" alt="GREAT THINGS ARE MADE TOGETHER"/>
+          </div>
+          <div class="flex flex-col gap-2 relative z-10 flex-grow">
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-label-md uppercase tracking-wider text-primary">Design & Research</span>
+              <a href="https://www.fh-joanneum.at/presse/grosse-dinge-werden-gemeinsam-gemacht/" target="_blank" class="hover:text-primary"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">open_in_new</span></a>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">GREAT THINGS ARE MADE TOGETHER</h3>
+            <p class="text-sm font-semibold text-on-surface-variant mb-2">Interaction Designer</p>
+            <p class="font-body-md text-sm text-on-surface-variant line-clamp-4 mb-4 flex-grow">For this project we were more than 50 master's students from "Communication Design", "Media Design", "Sound Design" and "Interaction Design". In our exhibition, we dedicated to the topic of togetherness and team spirit. Visitors have the opportunity to immerse themselves in the world of collaborative design processes. Each exhibited project not only tells its individual story, but also shows the power that arises when creative minds come together: great things are done together. <br><br> Grand Opening: 24.01.2024, start 19:00 Where: esc medien kunst labor, Bürgergasse 5, 8010 Graz Exhibition duration: 25 to 30.01.24 from 14:00 to 19:0</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Advocacy / Policy Section -->
+    <section id="advocacy" class="max-w-container-max mx-auto px-gutter md:px-margin-mobile mb-section-gap">
+      <div class="mb-stack-lg">
+        <p class="font-label-md text-primary uppercase tracking-widest">Policy & Governance</p>
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Internet Governance & Advocacy</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Active leadership and participation in shaping the future of digital inclusion and internet policy across Africa and globally.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+        <div class="glass-card rounded-xl p-8 flex gap-6 items-start hover:border-primary/50 transition-colors">
+          <div class="w-14 h-14 min-w-[56px] rounded-2xl flex items-center justify-center bg-primary/20 text-primary text-2xl shadow-lg border border-primary/30">
+            <i class="bx bx-briefcase-alt-2"></i>
+          </div>
+          <div>
+            <h3 class="font-headline-sm text-xl text-on-surface mb-1"><a href="https://icann-community.atlassian.net/wiki/spaces/NPOCC/overview" target="_blank" class="hover:text-primary transition-colors">NPOC (ICANN) <span class="material-symbols-outlined text-sm align-middle">open_in_new</span></a></h3>
+            <p class="font-label-md text-primary mb-3">Policy Chair (Oct 2025 – Present)</p>
+            <ul class="list-disc pl-5 font-body-md text-sm text-on-surface-variant space-y-1">
+              <li>Managing policy development and coordinating statements within ICANN and NCSG.</li>
+              <li>Promoting DNS security and stability solutions (DNSSEC, DoH, DoT, DAAR).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-xl p-8 flex gap-6 items-start hover:border-primary/50 transition-colors">
+          <div class="w-14 h-14 min-w-[56px] rounded-2xl flex items-center justify-center bg-tertiary/20 text-tertiary text-2xl shadow-lg border border-tertiary/30">
+            <i class="bx bx-globe"></i>
+          </div>
+          <div>
+            <h3 class="font-headline-sm text-xl text-on-surface mb-1"><a href="https://youthigf.bj" target="_blank" class="hover:text-tertiary transition-colors">Youth IGF Benin <span class="material-symbols-outlined text-sm align-middle">open_in_new</span></a></h3>
+            <p class="font-label-md text-tertiary mb-3">Founder & Coordinator (2023–2025)</p>
+            <ul class="list-disc pl-5 font-body-md text-sm text-on-surface-variant space-y-1">
+              <li>Empowering youth to participate in national and regional digital policy-making.</li>
+              <li>Bridging the digital divide with inclusive policy development.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-xl p-8 flex gap-6 items-start hover:border-primary/50 transition-colors">
+          <div class="w-14 h-14 min-w-[56px] rounded-2xl flex items-center justify-center bg-secondary/20 text-secondary-fixed-dim text-2xl shadow-lg border border-secondary/30">
+            <i class="bx bx-network-chart"></i>
+          </div>
+          <div>
+            <h3 class="font-headline-sm text-xl text-on-surface mb-1"><a href="https://waigf.ecowas.int/aboutus/" target="_blank" class="hover:text-secondary-fixed-dim transition-colors">West Africa Internet Governance Forum (WAIGF) <span class="material-symbols-outlined text-sm align-middle">open_in_new</span></a></h3>
+            <p class="font-label-md text-secondary-fixed-dim mb-3">Lead Technical & Developer</p>
+            <ul class="list-disc pl-5 font-body-md text-sm text-on-surface-variant space-y-1">
+              <li>Maintaining digital content to support public communication and event visibility.</li>
+              <li>Fostering sustainable digital ecosystems through information management.</li>
+              <li>Supporting onsite technical needs for the WAIGF editions and initiatives.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-xl p-8 flex gap-6 items-start hover:border-primary/50 transition-colors">
+          <div class="w-14 h-14 min-w-[56px] rounded-2xl flex items-center justify-center bg-primary/20 text-primary text-2xl shadow-lg border border-primary/30">
+            <i class="bx bx-buildings"></i>
+          </div>
+          <div>
+            <h3 class="font-headline-sm text-xl text-on-surface mb-1"><a href="https://icann.org" target="_blank" class="hover:text-primary transition-colors">International Forums (ICANN & ITU) <span class="material-symbols-outlined text-sm align-middle">open_in_new</span></a></h3>
+            <p class="font-label-md text-primary mb-3">Participant & Contributor</p>
+            <ul class="list-disc pl-5 font-body-md text-sm text-on-surface-variant space-y-1">
+              <li>Participating in global consultations on internet standards and telecommunications.</li>
+              <li>Advocating for human-centered innovation in the Global South.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="glass-card rounded-xl p-8 flex gap-6 items-start hover:border-primary/50 transition-colors">
+          <div class="w-14 h-14 min-w-[56px] rounded-2xl flex items-center justify-center bg-tertiary/20 text-tertiary text-2xl shadow-lg border border-tertiary/30">
+            <i class="bx bx-group"></i>
+          </div>
+          <div>
+            <h3 class="font-headline-sm text-xl text-on-surface mb-1"><a href="https://isoc.bj" target="_blank" class="hover:text-tertiary transition-colors">Internet Society (ISOC) Benin <span class="material-symbols-outlined text-sm align-middle">open_in_new</span></a></h3>
+            <p class="font-label-md text-tertiary mb-3">IT Project Manager (Volunteer)</p>
+            <ul class="list-disc pl-5 font-body-md text-sm text-on-surface-variant space-y-1">
+              <li>Co-led web implementation and supported software architecture for digital projects.</li>
+              <li>Coordinated technical work with community organizational needs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="max-w-container-max mx-auto px-gutter md:px-margin-mobile mb-section-gap">
+      <div class="mb-stack-lg">
+        <p class="font-label-md text-primary uppercase tracking-widest">Experience</p>
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Professional Experience</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          A selective overview of roles across research, software development, operations, teaching, community leadership, and Internet governance.
+        </p>
+      </div>
+
+      <div class="relative pl-8 md:pl-12">
+        <!-- Vertical Line -->
+        <div class="absolute left-[15px] top-8 bottom-0 w-[2px] bg-outline-variant/30 hidden md:block"></div>
+        <div class="absolute left-[7px] top-8 bottom-0 w-[2px] bg-outline-variant/30 md:hidden"></div>
+        
+        <div class="flex flex-col gap-8">
+          
+          <!-- BintaCura -->
+          <div class="relative glass-card p-6 md:p-8 rounded-xl hover:border-primary/50 transition-colors">
+            <!-- Timeline Node -->
+            <div class="absolute -left-[30px] md:-left-[46px] top-8 w-4 h-4 rounded-full bg-background border-[2px] border-primary flex items-center justify-center">
+              <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+              <div>
+                <h3 class="font-headline-sm text-xl text-on-surface">Lead Software Engineer & Mobile Developer <span class="text-primary font-bold">@ BintaCura</span></h3>
+                <p class="text-on-surface-variant text-sm mt-1 flex items-center gap-1"><i class='bx bx-map text-base'></i> Benin</p>
+              </div>
+              <div class="mt-2 md:mt-0 text-on-surface-variant text-sm font-label-md bg-white/5 px-3 py-1 rounded-full border border-white/10 self-start">
+                Present
+              </div>
+            </div>
+            
+            <ul class="list-none font-body-md text-on-surface-variant space-y-3">
+              <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Engineered a comprehensive digital health platform connecting patients, doctors, pharmacies, and insurers.</li>
+              <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Built a cross-platform mobile and web application using Flutter and Django, featuring secure PWA installation.</li>
+              <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Handled end-to-end deployment, secure routing, and robust state management.</li>
+            </ul>
+          </div>
+          
+          <!-- Jour2Rencontres -->
+          <div class="relative glass-card p-6 md:p-8 rounded-xl hover:border-primary/50 transition-colors">
+            <!-- Timeline Node -->
+            <div class="absolute -left-[30px] md:-left-[46px] top-8 w-4 h-4 rounded-full bg-background border-[2px] border-primary flex items-center justify-center">
+              <div class="w-1.5 h-1.5 rounded-full bg-primary/70"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+              <div>
+                <h3 class="font-headline-sm text-xl text-on-surface">Lead Software Engineer & Mobile Developer <span class="text-primary font-bold">@ Jour2Rencontres</span></h3>
+                <p class="text-on-surface-variant text-sm mt-1 flex items-center gap-1"><i class='bx bx-map text-base'></i> Remote</p>
+              </div>
+              <div class="mt-2 md:mt-0 text-on-surface-variant text-sm font-label-md bg-white/5 px-3 py-1 rounded-full border border-white/10 self-start">
+                Present
+              </div>
+            </div>
+            
+            <ul class="list-none font-body-md text-on-surface-variant space-y-3">
+              <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Developed and launched a professional dating application across Web, iOS, and Android platforms using Flutter and Firebase.</li>
+              <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Implemented real-time matchmaking, secure Google OAuth authentication, and interactive messaging systems.</li>
+              <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Managed app store deployment, ensuring strict compliance with security and privacy standards.</li>
+            </ul>
+          </div>
+          
+          <!-- AugmentorAI -->
+          <div class="relative glass-card p-6 md:p-8 rounded-xl hover:border-primary/50 transition-colors">
+            <!-- Timeline Node -->
+            <div class="absolute -left-[30px] md:-left-[46px] top-8 w-4 h-4 rounded-full bg-background border-[2px] border-primary flex items-center justify-center">
+              <div class="w-1.5 h-1.5 rounded-full bg-primary/40"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+              <div>
+                <h3 class="font-headline-sm text-xl text-on-surface">Full-Stack Developer <span class="text-primary font-bold">@ AugmentorAI</span></h3>
+                <p class="text-on-surface-variant text-sm mt-1 flex items-center gap-1"><i class='bx bx-map text-base'></i> Open Source</p>
+              </div>
+              <div class="mt-2 md:mt-0 text-on-surface-variant text-sm font-label-md bg-white/5 px-3 py-1 rounded-full border border-white/10 self-start">
+                Present
+              </div>
+            </div>
+            
+            <ul class="list-none font-body-md text-on-surface-variant space-y-3">
+              <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Built an open-source "Interview Practice Copilot" using Javascript.</li>
+              <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Integrated real-time WebSocket audio streaming, Speech-to-Text, and multiple LLM providers.</li>
+              <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Containerized the entire application ecosystem using Docker and Docker Compose.</li>
+            </ul>
+          </div>
+          
+          <!-- FH JOANNEUM -->
+          <div class="relative glass-card p-6 md:p-8 rounded-xl hover:border-outline-variant/50 transition-colors">
+            <!-- Timeline Node -->
+            <div class="absolute -left-[30px] md:-left-[46px] top-8 w-4 h-4 rounded-full bg-background border-[2px] border-outline-variant flex items-center justify-center">
+              <div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+              <div>
+                <h3 class="font-headline-sm text-xl text-on-surface">Project Manager & Research Associate <span class="text-on-surface-variant font-bold">@ FH JOANNEUM University</span></h3>
+                <p class="text-on-surface-variant text-sm mt-1 flex items-center gap-1"><i class='bx bx-map text-base'></i> Austria</p>
+              </div>
+              <div class="mt-2 md:mt-0 text-on-surface-variant text-sm font-label-md bg-white/5 px-3 py-1 rounded-full border border-white/10 self-start">
+                Sep 2022 – Jun 2025
+              </div>
+            </div>
+            
+            <ul class="list-none font-body-md text-on-surface-variant space-y-3">
+              <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-outline-variant before:rounded-full">Provided technical leadership and operational support for large-scale EU-funded digital research projects.</li>
+              <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-outline-variant before:rounded-full">Maintained web platform, ensuring high availability and seamless content delivery.</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="mt-12 text-center">
+        <a href="/resume" class="inline-block glass-card text-on-surface px-8 py-3 rounded-full font-label-md text-label-md hover:bg-white/10 transition-colors border border-outline-variant/30">
+          <i class='bx bx-user me-2'></i> View Full Résumé
+        </a>
+      </div>
+    </section>
+    
+    <!-- Press & Articles Section -->
+    <section id="press" class="max-w-container-max mx-auto px-gutter md:px-margin-mobile mb-section-gap">
+      <div class="mb-stack-lg">
+        <p class="font-label-md text-primary uppercase tracking-widest">Press & Articles</p>
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Features and mentions</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">A selection of articles and press coverage highlighting my work in Internet Governance, research, and digital transformation.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <article class="glass-card rounded-xl p-6 flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full font-label-md text-xs">Internet Governance</span>
+          </div>
+          <h3 class="font-headline-sm text-xl text-on-surface"><a href="https://npoc.org/team/yao-amevi-a-sossou/" target="_blank" rel="noopener" class="hover:text-primary transition-colors">ICANN NPOC Team <span class="material-symbols-outlined text-sm align-middle">open_in_new</span></a></h3>
+          <p class="font-label-md text-primary">Policy Chair & Digital Advocate</p>
+          <p class="font-body-md text-on-surface-variant">Featured profile on the Not-for-Profit Operational Concerns Constituency (NPOC) representing civil society within ICANN. Highlights my role as Policy Chair.</p>
+        </article>
+        
+        <article class="glass-card rounded-xl p-6 flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 bg-tertiary/20 text-tertiary rounded-full font-label-md text-xs">Youth Empowerment</span>
+          </div>
+          <h3 class="font-headline-sm text-xl text-on-surface"><a href="https://youthigf.bj/" target="_blank" rel="noopener" class="hover:text-tertiary transition-colors">Youth IGF Benin <span class="material-symbols-outlined text-sm align-middle">open_in_new</span></a></h3>
+          <p class="font-label-md text-tertiary">Founder & Coordinator</p>
+          <p class="font-body-md text-on-surface-variant">Coverage of the Youth Internet Governance Forum in Benin, a platform empowering the next generation of digital policymakers and fostering multi-stakeholder dialogue.</p>
+        </article>
+        
+        <article class="glass-card rounded-xl p-6 flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 bg-secondary/20 text-secondary-fixed-dim rounded-full font-label-md text-xs">Research & Academic</span>
+          </div>
+          <h3 class="font-headline-sm text-xl text-on-surface"><a href="https://www.researchgate.net/profile/Yao-Amevi-Amessinou-Sossou" target="_blank" rel="noopener" class="hover:text-secondary-fixed-dim transition-colors">ResearchGate <span class="material-symbols-outlined text-sm align-middle">open_in_new</span></a></h3>
+          <p class="font-label-md text-secondary-fixed-dim">Project Manager & Researcher</p>
+          <p class="font-body-md text-on-surface-variant">Academic profile detailing my background in computer science and interaction design, including contributions to EU-funded projects at FH JOANNEUM University.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-container-max mx-auto px-gutter md:px-margin-mobile mb-section-gap">
+      <div class="mb-stack-lg">
+        <p class="font-label-md text-primary uppercase tracking-widest">Skills</p>
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Technical, research, and professional competencies</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-8">
+        <div class="glass-card p-6 rounded-xl border-t-2 border-t-primary">
+          <h3 class="font-headline-sm text-lg text-on-surface mb-4">Software Development</h3>
+          <ul class="space-y-2 font-body-md text-sm text-on-surface-variant">
+            <li>Flutter, Javascript, Angular, Python (Django)</li>
+            <li>Node.js, WebSockets, REST APIs</li>
+            <li>Full-Stack Web and Mobile App Development</li>
+          </ul>
+        </div>
+        
+        <div class="glass-card p-6 rounded-xl border-t-2 border-t-tertiary">
+          <h3 class="font-headline-sm text-lg text-on-surface mb-4">Cloud & DevOps</h3>
+          <ul class="space-y-2 font-body-md text-sm text-on-surface-variant">
+            <li>Docker, Docker Compose, Firebase</li>
+            <li>Git, GitHub Actions, CI/CD pipelines</li>
+            <li>Linux Server Administration, Nginx</li>
+          </ul>
+        </div>
+
+        <div class="glass-card p-6 rounded-xl border-t-2 border-t-primary-fixed-dim">
+          <h3 class="font-headline-sm text-lg text-on-surface mb-4">Databases & AI Integration</h3>
+          <ul class="space-y-2 font-body-md text-sm text-on-surface-variant">
+            <li>PostgreSQL, MySQL, NoSQL (Firestore)</li>
+            <li>LLM APIs (OpenAI, Gemini, DeepSeek)</li>
+            <li>Local AI (Ollama) and Speech-to-Text pipelines</li>
+          </ul>
+        </div>
+
+        <div class="glass-card p-6 rounded-xl border-t-2 border-t-secondary-fixed-dim">
+          <h3 class="font-headline-sm text-lg text-on-surface mb-4">UX, Design & Architecture</h3>
+          <ul class="space-y-2 font-body-md text-sm text-on-surface-variant">
+            <li>Interaction design and human-centered thinking</li>
+            <li>Figma, Component-driven UI development</li>
+            <li>System architecture and scalable design</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-headline-sm text-lg text-on-surface mb-4">Certifications</h3>
+          <ul class="space-y-2 font-body-md text-sm text-on-surface-variant list-disc pl-4">
+            <li>Artificial Intelligence (AI) Ethics Summer School</li>
+            <li>CertNexus Extract, Transform, and Load Data</li>
+            <li>Foundations of User Experience (UX) Design - Google</li>
+            <li>Google Foundations of Project Management</li>
+            <li>Google IT Support Professional Certificate</li>
+            <li>ICSI | CNSS Certified Network Security Specialist</li>
+            <li>Project Management Foundations</li>
+            <li>Scrum Master Certification</li>
+            <li>Digital Product School - Product Discovery Sprint</li>
+            <li>International Startup League - Startup Festival 2023</li>
+          </ul>
+        </div>
+
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-headline-sm text-lg text-on-surface mb-4">Languages</h3>
+          <ul class="space-y-2 font-body-md text-sm text-on-surface-variant list-disc pl-4">
+            <li>French — Native</li>
+            <li>English — Fluent</li>
+            <li>German — Intermediate</li>
+            <li>Portuguese — Elementary</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Highlights Section -->
+    <section id="highlights" class="max-w-container-max mx-auto px-gutter md:px-margin-mobile mb-section-gap">
+      <div class="mb-stack-lg">
+        <p class="font-label-md text-primary uppercase tracking-widest">Highlights</p>
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Conference & field highlights</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          A visual selection of events, conferences, community activities, and professional moments.
+        </p>
+      </div>
+
+      <div class="photo-carousel">
+        <button class="photo-nav prev" id="photo-prev" aria-label="Previous highlight">
+          <i class="bx bx-chevron-left"></i>
+        </button>
+
+        <div class="photo-stage" id="photo-stage" aria-live="polite">
+          <!-- Slides generated by JavaScript -->
+        </div>
+
+        <button class="photo-nav next" id="photo-next" aria-label="Next highlight">
+          <i class="bx bx-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="photo-meta mt-8 text-center text-on-surface">
+        <h3 id="photo-title" class="font-headline-sm text-xl mb-2">Conference highlight</h3>
+        <p id="photo-caption" class="font-body-md text-on-surface-variant max-w-2xl mx-auto">
+          Add your event photos to showcase participation, speaking engagements, community work,
+          and international conferences.
+        </p>
+      </div>
+
+      <div class="photo-dots mt-6" id="photo-dots" aria-label="Photo carousel navigation">
+        <!-- Dots generated by JavaScript -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-container-max mx-auto px-gutter md:px-margin-mobile">
+      <div class="glass-card p-10 md:p-16 rounded-2xl text-center bg-gradient-to-b from-surface/10 to-primary/5">
+        <h2 class="font-display-lg-mobile text-3xl md:text-5xl text-on-surface mb-4">Let's connect</h2>
+        <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto mb-10">
+          Open to opportunities in Austria and across Europe — Full-Stack Software Engineering, Mobile App Development, UI/UX Design, and AI integrations.
+        </p>
+        
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="https://www.linkedin.com/in/ameviy" target="_blank" rel="noopener" class="flex items-center gap-2 bg-surface-variant/30 hover:bg-primary/20 px-6 py-3 rounded-full text-on-surface transition-colors border border-outline-variant/20">
+            <i class="bx bxl-linkedin text-xl"></i> LinkedIn
+          </a>
+          <a href="https://www.facebook.com/ameviy" target="_blank" rel="noopener" class="flex items-center gap-2 bg-surface-variant/30 hover:bg-primary/20 px-6 py-3 rounded-full text-on-surface transition-colors border border-outline-variant/20">
+            <i class="bx bx-link-external text-xl"></i> Facebook
+          </a>
+          <a href="https://github.com/soyames" target="_blank" rel="noopener" class="flex items-center gap-2 bg-surface-variant/30 hover:bg-primary/20 px-6 py-3 rounded-full text-on-surface transition-colors border border-outline-variant/20">
+            <i class="bx bxl-github text-xl"></i> GitHub
+          </a>
+          <a href="https://orcid.org/0009-0002-6203-855X" target="_blank" rel="noopener" class="flex items-center gap-2 bg-surface-variant/30 hover:bg-primary/20 px-6 py-3 rounded-full text-on-surface transition-colors border border-outline-variant/20">
+            <i class="bx bx-link-external text-xl"></i> ORCID
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface/80 backdrop-blur-md text-primary font-body-md w-full py-12 border-t border-outline-variant/10 mt-auto relative z-10">
+    <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div class="md:col-span-2 flex flex-col items-start gap-4">
+        <div class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight font-bold flex items-center gap-3">
+          <img src="assets/img/logo-profile.png" alt="Logo" class="w-8 h-8 rounded-full border border-outline-variant/20">
+          SOYAMES
+        </div>
+        <p class="text-on-surface-variant text-sm max-w-sm">
+          Full-Stack Software Engineer and Mobile Developer building scalable, production-ready applications.
+        </p>
+        <a href="/resume" class="mt-2 inline-flex items-center gap-2 glass-card px-6 py-2 rounded-full text-on-surface hover:text-primary hover:border-primary/50 transition-colors text-sm font-label-md border border-outline-variant/30">
+          <i class='bx bx-user-pin text-lg'></i> View Résumé
+        </a>
+      </div>
+      
+      <div class="flex flex-col gap-3">
+        <h4 class="font-label-md text-on-surface uppercase tracking-widest text-xs mb-1">Navigation</h4>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="index.html#about">About</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="index.html#featured">Work</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="/downloads">Software Downloads</a>
+      </div>
+      
+      <div class="flex flex-col gap-3">
+        <h4 class="font-label-md text-on-surface uppercase tracking-widest text-xs mb-1">Connect</h4>
+        <div class="flex gap-4 text-xl">
+          <a href="https://www.linkedin.com/in/ameviy" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-on-surface-variant hover:text-primary transition-colors"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/soyames" target="_blank" rel="noopener" aria-label="GitHub" class="text-on-surface-variant hover:text-primary transition-colors"><i class="bx bxl-github"></i></a>
+          <a href="mailto:soyames@gmail.com" aria-label="Email" class="text-on-surface-variant hover:text-primary transition-colors"><i class="bx bx-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="max-w-container-max mx-auto px-gutter pt-8 border-t border-outline-variant/10 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-on-surface-variant text-sm">
+        &copy; <span id="year">2026</span> Yao Amevi A. Sossou. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    
+    // Set Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => menu.classList.add('hidden'));
+    });
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

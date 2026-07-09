@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume | Yao Amevi A. Sossou</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional Resume of Yao Amevi A. Sossou - Software Engineer, Mobile Developer, and IT Project Manager." />
+  <meta name="author" content="Yao Amevi A. Sossou" />
+  <meta name="keywords" content="Resume, CV, Yao Sossou, Software Engineer, Mobile Developer, IT Project Manager, Flutter, Python, Javascript" />
+
+  <meta property="og:title" content="Resume | Yao Amevi A. Sossou" />
+  <meta property="og:description" content="Professional Resume of Yao Amevi A. Sossou - Software Engineer and Mobile Developer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://soyames.com/resume" />
+  <meta property="og:image" content="https://soyames.com/assets/img/logo-profile.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Resume | Yao Amevi A. Sossou" />
+  <meta name="twitter:description" content="Professional Resume of Yao Amevi A. Sossou - Software Engineer and Mobile Developer." />
+
+  <link rel="canonical" href="https://soyames.com/resume" />
+  <link rel="icon" type="image/png" href="assets/img/logo-profile.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <!-- Material Symbols & Boxicons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts for Stitch Design -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&family=Lexend:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Particles JS -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "on-tertiary-container": "#000703",
+                    "on-secondary-fixed": "#0d1c2d",
+                    "on-primary-fixed": "#07006c",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "surface-bright": "#31394d",
+                    "surface-container-lowest": "#060e20",
+                    "on-background": "#dae2fd",
+                    "primary": "#c0c1ff",
+                    "background": "#0b1326",
+                    "surface-variant": "#2d3449",
+                    "on-surface-variant": "#c7c4d7",
+                    "tertiary-fixed": "#6ffbbe",
+                    "on-secondary-fixed-variant": "#39485a",
+                    "inverse-primary": "#494bd6",
+                    "secondary": "#b9c8de",
+                    "primary-fixed": "#e1e0ff",
+                    "error": "#ffb4ab",
+                    "surface-tint": "#c0c1ff",
+                    "on-error": "#690005",
+                    "inverse-on-surface": "#283044",
+                    "on-primary-container": "#0d0096",
+                    "on-surface": "#dae2fd",
+                    "surface-dim": "#0b1326",
+                    "surface": "#0b1326",
+                    "secondary-container": "#39485a",
+                    "inverse-surface": "#dae2fd",
+                    "on-tertiary-fixed": "#002113",
+                    "tertiary": "#4edea3",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "outline-variant": "#464554",
+                    "surface-container-low": "#131b2e",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary": "#233143",
+                    "surface-container-high": "#222a3d",
+                    "primary-container": "#8083ff",
+                    "surface-container": "#171f33",
+                    "outline": "#908fa0",
+                    "secondary-fixed": "#d4e4fa",
+                    "surface-container-highest": "#2d3449",
+                    "on-secondary-container": "#a7b6cc",
+                    "secondary-fixed-dim": "#b9c8de",
+                    "tertiary-container": "#00885d",
+                    "on-tertiary": "#003824",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "error-container": "#93000a",
+                    "on-primary": "#1000a9"
+                },
+                borderRadius: {
+                    DEFAULT: "0.25rem",
+                    lg: "0.5rem",
+                    xl: "0.75rem",
+                    full: "9999px"
+                },
+                spacing: {
+                    "stack-md": "16px",
+                    "stack-sm": "8px",
+                    "gutter": "24px",
+                    "section-gap": "80px",
+                    "container-max": "1000px",
+                    "margin-mobile": "20px",
+                    "stack-lg": "32px"
+                },
+                fontFamily: {
+                    "headline-md": ["Lexend"],
+                    "code": ["JetBrains Mono"],
+                    "display-lg": ["Lexend"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-sm": ["Lexend"],
+                    "display-lg-mobile": ["Lexend"]
+                }
+            }
+        }
+    }
+  </script>
+  <style>
+    body {
+        background-color: theme('colors.background') !important;
+        color: theme('colors.on-background') !important;
+    }
+    
+    .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .glass-card-header {
+        background: linear-gradient(135deg, rgba(73, 75, 214, 0.2), rgba(99, 102, 241, 0.05));
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .ambient-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.05) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 30%, rgba(78, 222, 163, 0.03) 0%, transparent 50%);
+        pointer-events: none;
+    }
+
+    /* Used for particles.js */
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
+
+    /* Print specific styles for readable, elegant layout */
+    @media print {
+      @page {
+        margin: 0.5cm;
+        size: A4 portrait;
+      }
+      * {
+        line-height: 1.4 !important;
+      }
+      body { 
+        background-color: #ffffff !important; 
+        color: #333333 !important; /* Dark Gray */
+        margin: 0 !important; 
+        padding: 0 !important; 
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+        font-size: 10pt !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      nav, footer, .ambient-bg, .particles-js-canvas-el { display: none !important; }
+      
+      .glass-card {
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+      }
+
+      .glass-card-header {
+        background: transparent !important;
+        border-bottom: 1px solid #ccc !important;
+        padding: 0 0 16px 0 !important;
+        margin-bottom: 24px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+      }
+      
+      /* Force all text to be dark for readability */
+      .text-on-surface { color: #000000 !important; }
+      .text-on-surface-variant { color: #444444 !important; }
+      .text-primary { color: #2563eb !important; font-weight: 600 !important; }
+
+      .print-grid {
+          display: grid !important;
+          grid-template-columns: 25% 75% !important;
+          gap: 24px !important;
+      }
+      
+      .print-left-col {
+        border-right: none !important;
+        padding-right: 0 !important;
+        background: transparent !important;
+      }
+
+      .print-right-col {
+        padding-left: 0 !important;
+      }
+      
+      .print-heading { margin-bottom: 12px !important; border-bottom: none !important; padding-bottom: 0 !important; color: #2563eb !important; font-weight: bold !important; font-size: 11pt !important; }
+      .print-compact { margin-bottom: 16px !important; page-break-inside: avoid; }
+      .print-compact p { margin-bottom: 4px !important; }
+      .print-compact ul { padding-left: 16px !important; margin-bottom: 4px !important; }
+      .print-compact li { margin-bottom: 2px !important; }
+      
+      /* Timeline compression for print */
+      .print\:mb-4 { margin-bottom: 16px !important; }
+      .print\:p-0 { padding: 0 !important; }
+    }
+  </style>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="antialiased min-h-screen flex flex-col relative overflow-x-hidden">
+
+  <!-- Backgrounds -->
+  <div id="particles-js" aria-hidden="true"></div>
+  <div class="ambient-bg"></div>
+
+  <!-- TopNavBar -->
+  <nav class="bg-surface/80 backdrop-blur-md text-primary font-label-md text-label-md fixed top-0 w-full border-b border-outline-variant/10 shadow-sm z-50 transition-all duration-300 ease-in-out">
+    <div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-20">
+      <a href="/" class="flex items-center gap-3">
+        <img src="assets/img/logo-profile.png" alt="Logo" class="w-10 h-10 rounded-full border border-outline-variant/20">
+        <span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight uppercase">SOYAMES</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="/">Back to Portfolio</a>
+        <div id="google_translate_element" class="ml-4"></div>
+      </div>
+
+      <a href="javascript:window.print()" class="bg-white text-primary-container px-6 py-2 rounded-full font-label-md text-label-md hover:bg-surface-variant/20 transition-all duration-300 ease-in-out hidden md:flex items-center gap-2">
+        <i class='bx bx-printer'></i> Print/Save PDF
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="md:hidden text-on-surface nav-toggle" id="mobile-menu-btn" aria-label="Toggle navigation">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-surface/95 backdrop-blur-md pt-24 px-8 flex flex-col gap-6 font-headline-sm text-center">
+    <a href="/" class="mobile-nav-link text-on-surface">Back to Portfolio</a>
+    <a href="javascript:window.print()" class="mobile-nav-link text-primary"><i class='bx bx-printer'></i> Print/Save PDF</a>
+  </div>
+
+  <main class="flex-grow pt-32 pb-section-gap print:pt-0 print:pb-0">
+    <div class="max-w-container-max mx-auto px-gutter md:px-margin-mobile print:px-0 print:max-w-full">
+      
+      <!-- Resume Card -->
+      <div class="glass-card rounded-2xl overflow-hidden print:border-none print:shadow-none">
+        
+        <!-- Header -->
+        <header class="glass-card-header p-8 md:p-12 print:p-0 print:mb-6">
+          <div class="print:w-2/3">
+            <h1 class="font-display-lg-mobile md:font-display-lg text-on-surface mb-2 tracking-tight print:mb-1 print:text-[28pt] print:font-serif print:font-bold print:text-black" style="font-family: Georgia, serif;">Yao Amevi Amessinou SOSSOU</h1>
+            <h2 class="font-headline-sm text-primary mb-6 print:mb-0 print:text-[14pt] print:text-black">Software Engineer & Mobile Developer</h2>
+          </div>
+          
+          <div class="flex flex-wrap gap-x-6 gap-y-3 font-body-md text-sm text-on-surface-variant print:w-1/3 print:flex-col print:gap-1 print:text-right print:items-end print:text-black print:text-[10pt] print:mt-2">
+            <div class="flex items-center gap-2 print:gap-0"><i class='bx bx-map text-primary print:hidden'></i> <span class="print:block">Wagner-Biro-Straße 109, Graz</span></div>
+            <div class="flex items-center gap-2 print:gap-0"><i class='bx bx-phone text-primary print:hidden'></i> <span class="print:block font-bold">+43 677 64 28 5738</span></div>
+            <div class="flex items-center gap-2 print:gap-0"><i class='bx bx-envelope text-primary print:hidden'></i> <span class="print:block font-bold">soyames@gmail.com</span></div>
+            <div class="flex items-center gap-2 print:hidden"><i class='bx bxl-linkedin-square text-primary'></i> <a href="https://www.linkedin.com/in/ameviy/" target="_blank" class="hover:text-primary transition-colors text-on-surface-variant">LinkedIn</a></div>
+            <div class="flex items-center gap-2 print:hidden"><i class='bx bxl-github text-primary'></i> <a href="https://github.com/soyames" target="_blank" class="hover:text-primary transition-colors text-on-surface-variant">GitHub</a></div>
+          </div>
+        </header>
+
+        <!-- Body -->
+        <div class="grid grid-cols-1 md:grid-cols-3 print-grid">
+          
+          <!-- Left Column -->
+          <aside class="p-8 md:p-10 border-r border-outline-variant/10 bg-surface-variant/10 print-left-col print:p-2">
+            
+            <div class="mb-8 print-compact">
+              <h3 class="font-headline-sm text-lg text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2 mb-4 print-heading">Technical Skills</h3>
+              
+              <div class="mb-4">
+                <h4 class="font-label-md text-on-surface mb-1">Frontend & Mobile</h4>
+                <p class="font-body-md text-sm text-on-surface-variant">Flutter, Javascript, Angular, Ionic, HTML/CSS, TailwindCSS</p>
+              </div>
+              <div class="mb-4">
+                <h4 class="font-label-md text-on-surface mb-1">Backend</h4>
+                <p class="font-body-md text-sm text-on-surface-variant">Python (Django), Node.js, REST APIs, WebSockets</p>
+              </div>
+              <div class="mb-4">
+                <h4 class="font-label-md text-on-surface mb-1">Cloud & DevOps</h4>
+                <p class="font-body-md text-sm text-on-surface-variant">Firebase, Docker & Compose, Git/GitHub Actions, CI/CD, Linux Server Admin</p>
+              </div>
+              <div class="mb-4">
+                <h4 class="font-label-md text-on-surface mb-1">Databases</h4>
+                <p class="font-body-md text-sm text-on-surface-variant">PostgreSQL, MySQL, NoSQL (Firestore)</p>
+              </div>
+              <div>
+                <h4 class="font-label-md text-on-surface mb-1">Other</h4>
+                <p class="font-body-md text-sm text-on-surface-variant">AI Integrations (Ollama, Gemini, DeepSeek APIs), Agile/Scrum, Google OAuth</p>
+              </div>
+            </div>
+
+            <div class="mb-8 print-compact">
+              <h3 class="font-headline-sm text-lg text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2 mb-4 print-heading">Education</h3>
+              <div class="mb-4">
+                <h4 class="font-label-md text-on-surface">Msc Machine Learning and Generative AI</h4>
+                <p class="font-body-md text-sm text-on-surface-variant">FH JOANNEUM, Austria</p>
+                <p class="font-body-md text-xs text-on-surface-variant opacity-80">Oct 2025 – Sep 2027</p>
+              </div>
+              <div class="mb-4">
+                <h4 class="font-label-md text-on-surface">MA Communication, Media, Sound & Interaction Design</h4>
+                <p class="font-body-md text-sm text-on-surface-variant">FH JOANNEUM, Austria</p>
+                <p class="font-body-md text-xs text-on-surface-variant opacity-80">Sep 2022 – Feb 2025</p>
+              </div>
+              <div class="mb-4">
+                <h4 class="font-label-md text-on-surface">BSc Computer Science</h4>
+                <p class="font-body-md text-sm text-on-surface-variant">Burkina Institute of Technology</p>
+                <p class="font-body-md text-xs text-on-surface-variant opacity-80">Oct 2018 – Jul 2021</p>
+              </div>
+              <div>
+                <h4 class="font-label-md text-on-surface">MA & BA Applied English Linguistics</h4>
+                <p class="font-body-md text-sm text-on-surface-variant">University of Abomey-Calavi</p>
+                <p class="font-body-md text-xs text-on-surface-variant opacity-80">2011 – 2016</p>
+              </div>
+            </div>
+
+            <div class="mb-8 print-compact">
+              <h3 class="font-headline-sm text-lg text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2 mb-4 print-heading">Certifications</h3>
+              <ul class="list-disc pl-4 font-body-md text-sm text-on-surface-variant space-y-1">
+                <li>Scrum Master Certification</li>
+                <li>Google IT Support Professional</li>
+                <li>ICSI/CNSS Network Security Specialist</li>
+              </ul>
+            </div>
+
+            <div class="print-compact">
+              <h3 class="font-headline-sm text-lg text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2 mb-4 print-heading">Languages</h3>
+              <ul class="list-disc pl-4 font-body-md text-sm text-on-surface-variant space-y-1">
+                <li><span class="text-on-surface font-semibold">French:</span> Native</li>
+                <li><span class="text-on-surface font-semibold">English:</span> Fluent</li>
+                <li><span class="text-on-surface font-semibold">German:</span> Intermediate</li>
+              </ul>
+            </div>
+            
+          </aside>
+
+          <!-- Right Column -->
+          <main class="md:col-span-2 p-8 md:p-12 print-right-col print:p-2">
+            
+            <div class="mb-10 print-compact">
+              <h3 class="font-headline-sm text-lg text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2 mb-4 print-heading">Professional Profile</h3>
+              <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">
+                Results-driven Software Engineer and Mobile Developer with a proven track record of designing, building, and deploying complex, production-ready applications. Strong expertise in Flutter, Javascript, Python/Django, and modern cloud architectures. Adept at turning complex requirements into scalable digital solutions, demonstrated by independently launching successful platforms serving live users. Multilingual with excellent cross-functional communication skills.
+              </p>
+            </div>
+            
+            <div class="mb-10 print-compact">
+              <h3 class="font-headline-sm text-lg text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2 mb-6 print-heading">Featured Production Applications</h3>
+                            <div class="mb-8 print-compact">
+                    <h4 class="font-headline-sm text-lg text-on-surface mb-1 print:text-sm">BintaCura | Lead Developer</h4>
+                    <a href="https://bintacura.org" target="_blank" class="text-primary text-sm font-body-md hover:underline mb-2 inline-block print:mb-0 print:text-xs">bintacura.org</a>
+                    <ul class="list-disc pl-5 font-body-md text-sm text-on-surface-variant space-y-1 print:text-xs print:space-y-0 print:pl-3">
+                  <li>Engineered a comprehensive digital health platform connecting patients, doctors, pharmacies, and insurers in Benin.</li>
+                  <li>Built a cross-platform mobile and web application using <strong class="text-on-surface">Flutter</strong> and <strong class="text-on-surface">Django</strong>, featuring secure PWA installation, appointment scheduling, digital prescriptions, and payment gateways.</li>
+                  <li>Handled end-to-end deployment, ensuring mobile-web app capability, secure routing, and robust state management.</li>
+                </ul>
+              </div>
+
+                  <div class="mb-8 print-compact">
+                    <h4 class="font-headline-sm text-lg text-on-surface mb-1 print:text-sm">Jour2Rencontres | Lead Developer</h4>
+                    <a href="https://jour2rencontres.com" target="_blank" class="text-primary text-sm font-body-md hover:underline mb-2 inline-block print:mb-0 print:text-xs">jour2rencontres.com</a>
+                    <ul class="list-disc pl-5 font-body-md text-sm text-on-surface-variant space-y-1 print:text-xs print:space-y-0 print:pl-3">
+                  <li>Developed and launched a professional dating application across Web, iOS, and Android platforms using <strong class="text-on-surface">Flutter</strong> and <strong class="text-on-surface">Firebase</strong>.</li>
+                  <li>Implemented real-time matchmaking, secure Google OAuth authentication, and interactive messaging systems.</li>
+                  <li>Managed app store deployment, ensuring strict compliance with security and privacy standards.</li>
+                </ul>
+              </div>
+
+                  <div class="mb-8 print-compact">
+                    <h4 class="font-headline-sm text-lg text-on-surface mb-1 print:text-sm">AugmentorAI | Creator & Developer</h4>
+                    <a href="https://github.com/soyames/AugmentorAI" target="_blank" class="text-primary text-sm font-body-md hover:underline mb-2 inline-block print:mb-0 print:text-xs">github.com/soyames/AugmentorAI</a>
+                    <ul class="list-disc pl-5 font-body-md text-sm text-on-surface-variant space-y-1 print:text-xs print:space-y-0 print:pl-3">
+                  <li>Built an open-source "Interview Practice Copilot" using <strong class="text-on-surface">Javascript</strong>.</li>
+                  <li>Integrated real-time WebSocket audio streaming, Speech-to-Text, and multiple LLM providers (Gemini, DeepSeek, local Ollama).</li>
+                </ul>
+              </div>
+
+                  <div class="mb-8 print-compact">
+                    <h4 class="font-headline-sm text-lg text-on-surface mb-1 print:text-sm">Fragvroni | Creator & Developer</h4>
+                    <a href="https://fragvroni.up.railway.app" target="_blank" class="text-primary text-sm font-body-md hover:underline mb-2 inline-block print:mb-0 print:text-xs">fragvroni.up.railway.app</a>
+                    <ul class="list-disc pl-5 font-body-md text-sm text-on-surface-variant space-y-1 print:text-xs print:space-y-0 print:pl-3">
+                  <li>Built an open-source social benefit application using <strong class="text-on-surface">Python</strong>.</li>
+                  <li>Integrated real-time auto processing ETL pipelines for data synchronization.</li>
+                  <li>Developed a progressive web application (PWA) for offline accessibility.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="print-compact">
+              <h3 class="font-headline-sm text-lg text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2 mb-6 print-heading">Professional Experience</h3>
+              
+              <div class="relative pl-6 md:pl-10">
+                <!-- Vertical Line -->
+                <div class="absolute left-[11px] top-6 bottom-0 w-[2px] bg-outline-variant/30 print:hidden"></div>
+                
+                <div class="flex flex-col gap-6">
+                  
+                  <!-- FH JOANNEUM -->
+                  <div class="relative glass-card p-5 md:p-6 rounded-xl hover:border-primary/50 transition-colors print:p-0 print:border-none print:shadow-none print:bg-transparent print:mb-4">
+                    <!-- Timeline Node -->
+                    <div class="absolute -left-[30px] md:-left-[46px] top-6 w-3.5 h-3.5 rounded-full bg-background border-[2px] border-primary flex items-center justify-center print:hidden">
+                      <div class="w-1 h-1 rounded-full bg-primary"></div>
+                    </div>
+                    
+                    <div class="flex flex-col mb-3 print:mb-2">
+                      <h4 class="font-headline-sm text-lg text-on-surface print:text-[11pt] print:font-serif">
+                        <strong class="print:text-black">FH JOANNEUM</strong>, <span class="font-normal text-on-surface-variant print:text-black">Graz, Austria</span> &mdash; <em class="text-primary not-italic md:italic print:text-black">Project Manager & Research Associate</em>
+                      </h4>
+                      <div class="mt-2 text-on-surface-variant text-sm font-label-md bg-white/5 px-3 py-1 rounded-full border border-white/10 self-start print:bg-transparent print:border-none print:p-0 print:text-[#666666] print:text-[9pt] print:uppercase print:tracking-widest">
+                        Sep 2022 – Jun 2025
+                      </div>
+                    </div>
+                    
+                    <ul class="list-none font-body-md text-sm text-on-surface-variant space-y-2 print:list-disc print:pl-4 print:text-[10pt] print:text-black">
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full print:pl-0 print:before:hidden">Provided technical leadership and operational support for large-scale EU-funded and research projects.</li>
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full print:pl-0 print:before:hidden">Maintained web platform, ensuring high availability and seamless content delivery.</li>
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full print:pl-0 print:before:hidden">Collaborated with international partners to manage technical integrations and project documentation.</li>
+                    </ul>
+                  </div>
+
+                  <!-- Odoo ERP -->
+                  <div class="relative glass-card p-5 md:p-6 rounded-xl hover:border-primary/50 transition-colors print:p-0 print:border-none print:shadow-none print:bg-transparent print:mb-4">
+                    <!-- Timeline Node -->
+                    <div class="absolute -left-[30px] md:-left-[46px] top-6 w-3.5 h-3.5 rounded-full bg-background border-[2px] border-primary flex items-center justify-center print:hidden">
+                      <div class="w-1 h-1 rounded-full bg-primary/70"></div>
+                    </div>
+                    
+                    <div class="flex flex-col mb-3 print:mb-2">
+                      <h4 class="font-headline-sm text-lg text-on-surface print:text-[11pt] print:font-serif">
+                        <strong class="print:text-black">Nouvelle Expertise Technique</strong>, <span class="font-normal text-on-surface-variant print:text-black">Burkina Faso</span> &mdash; <em class="text-primary not-italic md:italic print:text-black">Software Engineer (Odoo ERP)</em>
+                      </h4>
+                      <div class="mt-2 text-on-surface-variant text-sm font-label-md bg-white/5 px-3 py-1 rounded-full border border-white/10 self-start print:bg-transparent print:border-none print:p-0 print:text-[#666666] print:text-[9pt] print:uppercase print:tracking-widest">
+                        Nov 2021 – Feb 2022
+                      </div>
+                    </div>
+                    
+                    <ul class="list-none font-body-md text-sm text-on-surface-variant space-y-2 print:list-disc print:pl-4 print:text-[10pt] print:text-black">
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full print:pl-0 print:before:hidden">Developed and customized internal business modules for Odoo ERP using Python and PostgreSQL.</li>
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full print:pl-0 print:before:hidden">Debugged complex server issues, performed log analysis, and deployed fixes to production environments.</li>
+                    </ul>
+                  </div>
+                  
+                  <!-- ISOC Benin -->
+                  <div class="relative glass-card p-5 md:p-6 rounded-xl hover:border-primary/50 transition-colors print:p-0 print:border-none print:shadow-none print:bg-transparent print:mb-4">
+                    <!-- Timeline Node -->
+                    <div class="absolute -left-[30px] md:-left-[46px] top-6 w-3.5 h-3.5 rounded-full bg-background border-[2px] border-primary flex items-center justify-center print:hidden">
+                      <div class="w-1 h-1 rounded-full bg-primary/40"></div>
+                    </div>
+                    
+                    <div class="flex flex-col mb-3 print:mb-2">
+                      <h4 class="font-headline-sm text-lg text-on-surface print:text-[11pt] print:font-serif">
+                        <strong class="print:text-black">Internet Society Benin Chapter</strong>, <span class="font-normal text-on-surface-variant print:text-black">Benin</span> &mdash; <em class="text-primary not-italic md:italic print:text-black">IT Project Manager & Web Developer</em>
+                      </h4>
+                      <div class="mt-2 text-on-surface-variant text-sm font-label-md bg-white/5 px-3 py-1 rounded-full border border-white/10 self-start print:bg-transparent print:border-none print:p-0 print:text-[#666666] print:text-[9pt] print:uppercase print:tracking-widest">
+                        Oct 2020 – Aug 2021
+                      </div>
+                    </div>
+                    
+                    <ul class="list-none font-body-md text-sm text-on-surface-variant space-y-2 print:list-disc print:pl-4 print:text-[10pt] print:text-black">
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full print:pl-0 print:before:hidden">Co-led the technical development team, coordinating frontend development activities and ensuring compliance with project specifications.</li>
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full print:pl-0 print:before:hidden">Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full print:pl-0 print:before:hidden">Supported the planning and technical deployment of community networking initiatives.</li>
+                    </ul>
+                  </div>
+
+                  <!-- DREA-COS -->
+                  <div class="relative glass-card p-5 md:p-6 rounded-xl hover:border-outline-variant/50 transition-colors print:p-0 print:border-none print:shadow-none print:bg-transparent print:mb-4">
+                    <!-- Timeline Node -->
+                    <div class="absolute -left-[30px] md:-left-[46px] top-6 w-3.5 h-3.5 rounded-full bg-background border-[2px] border-outline-variant flex items-center justify-center print:hidden">
+                      <div class="w-1 h-1 rounded-full bg-outline-variant"></div>
+                    </div>
+                    
+                    <div class="flex flex-col mb-3 print:mb-2">
+                      <h4 class="font-headline-sm text-lg text-on-surface print:text-[11pt] print:font-serif">
+                        <strong class="print:text-black">DREA-COS</strong>, <span class="font-normal text-on-surface-variant print:text-black">Koudougou, Burkina Faso</span> &mdash; <em class="text-primary not-italic md:italic print:text-black">Engineer Intern</em>
+                      </h4>
+                      <div class="mt-2 text-on-surface-variant text-sm font-label-md bg-white/5 px-3 py-1 rounded-full border border-white/10 self-start print:bg-transparent print:border-none print:p-0 print:text-[#666666] print:text-[9pt] print:uppercase print:tracking-widest">
+                        Aug 2020 – Sep 2020
+                      </div>
+                    </div>                    
+                    <ul class="list-none font-body-md text-sm text-on-surface-variant space-y-2 print:list-disc print:pl-4 print:text-[10pt] print:text-black">
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-outline-variant before:rounded-full print:pl-0 print:before:hidden">Maintained IT equipment and provided technical support for regional administrative offices.</li>
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-outline-variant before:rounded-full print:pl-0 print:before:hidden">Deployed and configured Wi-Fi connectivity across government administrative buildings.</li>
+                    </ul>
+                  </div>
+
+                  <!-- GDSC -->
+                  <div class="relative glass-card p-5 md:p-6 rounded-xl hover:border-outline-variant/50 transition-colors print:p-0 print:border-none print:shadow-none print:bg-transparent print:mb-4">
+                    <!-- Timeline Node -->
+                    <div class="absolute -left-[30px] md:-left-[46px] top-6 w-3.5 h-3.5 rounded-full bg-background border-[2px] border-outline-variant flex items-center justify-center print:hidden">
+                      <div class="w-1 h-1 rounded-full bg-outline-variant/50"></div>
+                    </div>
+                    
+                    <div class="flex flex-col mb-3 print:mb-2">
+                      <h4 class="font-headline-sm text-lg text-on-surface print:text-[11pt] print:font-serif">
+                        <strong class="print:text-black">Burkina Institute of Technology</strong>, <span class="font-normal text-on-surface-variant print:text-black">Burkina Faso</span> &mdash; <em class="text-primary not-italic md:italic print:text-black">Lead, Google Developer Student Clubs</em>
+                      </h4>
+                      <div class="mt-2 text-on-surface-variant text-sm font-label-md bg-white/5 px-3 py-1 rounded-full border border-white/10 self-start print:bg-transparent print:border-none print:p-0 print:text-[#666666] print:text-[9pt] print:uppercase print:tracking-widest">
+                        Sep 2020 – Aug 2021
+                      </div>
+                    </div>
+                    
+                    <ul class="list-none font-body-md text-sm text-on-surface-variant space-y-2 print:list-disc print:pl-4 print:text-[10pt] print:text-black">
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-outline-variant before:rounded-full print:pl-0 print:before:hidden">Organized coding workshops and mentored students on modern web and mobile development frameworks.</li>
+                      <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-outline-variant before:rounded-full print:pl-0 print:before:hidden">Trained peers on Git version control, debugging, and software engineering best practices.</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+          </main>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface/80 backdrop-blur-md text-primary font-body-md w-full py-12 border-t border-outline-variant/10 mt-auto relative z-10">
+    <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div class="md:col-span-2 flex flex-col items-start gap-4">
+        <div class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight font-bold flex items-center gap-3">
+          <img src="assets/img/logo-profile.png" alt="Logo" class="w-8 h-8 rounded-full border border-outline-variant/20">
+          SOYAMES
+        </div>
+        <p class="text-on-surface-variant text-sm max-w-sm">
+          Full-Stack Software Engineer and Mobile Developer building scalable, production-ready applications.
+        </p>
+        <a href="/resume" class="mt-2 inline-flex items-center gap-2 glass-card px-6 py-2 rounded-full text-on-surface hover:text-primary hover:border-primary/50 transition-colors text-sm font-label-md border border-outline-variant/30">
+          <i class='bx bx-user-pin text-lg'></i> View Résumé
+        </a>
+      </div>
+      
+      <div class="flex flex-col gap-3">
+        <h4 class="font-label-md text-on-surface uppercase tracking-widest text-xs mb-1">Navigation</h4>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="index.html#about">About</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="index.html#featured">Work</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="/downloads">Software Downloads</a>
+      </div>
+      
+      <div class="flex flex-col gap-3">
+        <h4 class="font-label-md text-on-surface uppercase tracking-widest text-xs mb-1">Connect</h4>
+        <div class="flex gap-4 text-xl">
+          <a href="https://www.linkedin.com/in/ameviy" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-on-surface-variant hover:text-primary transition-colors"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/soyames" target="_blank" rel="noopener" aria-label="GitHub" class="text-on-surface-variant hover:text-primary transition-colors"><i class="bx bxl-github"></i></a>
+          <a href="mailto:soyames@gmail.com" aria-label="Email" class="text-on-surface-variant hover:text-primary transition-colors"><i class="bx bx-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="max-w-container-max mx-auto px-gutter pt-8 border-t border-outline-variant/10 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-on-surface-variant text-sm">
+        &copy; <span id="year">2026</span> Yao Amevi A. Sossou. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
