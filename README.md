@@ -1,8 +1,8 @@
 # Hi there 👋 I'm Yao Amevi A. Sossou
 
-**Full-Stack Software Engineer & Mobile Developer · Project Manager · Digital Policy Expert** — based in Graz, Austria 🇦🇹
+**Full-Stack Software Engineer & Mobile Developer · Project Manager · Digital Policy Expert** - based in Graz, Austria 🇦🇹
 
-I build scalable, production-ready web and mobile applications — from AI-powered tools to civic-tech and digital health platforms — and I'm open to opportunities in Austria and across Europe.
+I build scalable, production-ready web and mobile applications - from AI-powered tools to civic-tech and digital health platforms - and I'm open to opportunities in Austria and across Europe.
 
 <p>
   <a href="https://soyames.com">
@@ -31,10 +31,10 @@ I build scalable, production-ready web and mobile applications — from AI-power
 
 | Project | What it is | Try it |
 | --- | --- | --- |
-| **AugmentorAI** | AI-powered interview practice copilot — real-time speech-to-text, interactive LLM feedback, cloud (Gemini, DeepSeek) and local (Ollama) inference. React · FastAPI · Electron | [Download](https://soyames.com/downloads) |
-| **Toxô** | Eco-citizenship app for Cotonou, Benin — civic reporting with gamified rewards. Flutter PWA + native Android | [Download](https://soyames.com/downloads) |
-| **BintaCura** | Digital health platform for Benin — appointments, prescriptions, pharmacies, and payments connecting patients, doctors, hospitals, and insurers | [Live](https://bintacura.org) |
-| **Jour 2 Rencontres** | Cross-platform dating application — connect, chat, and meet securely | [Google Play](https://play.google.com/store/apps/details?id=com.jour2rencontre.app) · [Web](https://jour2rencontres.com) |
+| **AugmentorAI** | AI-powered interview practice copilot - real-time speech-to-text, interactive LLM feedback, cloud (Gemini, DeepSeek) and local (Ollama) inference. React · FastAPI · Electron | [Download](https://soyames.com/downloads) |
+| **Toxô** | Eco-citizenship app for Cotonou, Benin - civic reporting with gamified rewards. Flutter PWA + native Android | [Download](https://soyames.com/downloads) |
+| **BintaCura** | Digital health platform for Benin - appointments, prescriptions, pharmacies, and payments connecting patients, doctors, hospitals, and insurers | [Live](https://bintacura.org) |
+| **Jour 2 Rencontres** | Cross-platform dating application - connect, chat, and meet securely | [Google Play](https://play.google.com/store/apps/details?id=com.jour2rencontre.app) · [Web](https://jour2rencontres.com) |
 | **Fragvroni** | Privacy-first Austrian PWA that helps people find benefits they're entitled to, based on official open data | [Live](https://fragvroni.up.railway.app) |
 | **GreenCommute** | Sustainable urban mobility tracking app. Ionic · Capacitor | [Download](https://soyames.com/downloads) |
 | **Daily Affirmation** | Daily positive affirmations with reminders and offline support | [Download](https://soyames.com/downloads) |
